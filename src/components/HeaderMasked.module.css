@@ -1,0 +1,13 @@
+.groupChild {
+  background-color: var(--color-darkslategray);
+  overflow: hidden;
+  opacity: 0.4;
+}
+.frameParent,
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 120px;
+}

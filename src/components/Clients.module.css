@@ -1,0 +1,65 @@
+.frameChild,
+.frameInner,
+.frameItem,
+.rectangleIcon {
+  position: relative;
+  width: 303.1px;
+  height: 100px;
+  object-fit: cover;
+}
+.frameInner,
+.frameItem,
+.rectangleIcon {
+  width: 238px;
+}
+.frameInner,
+.rectangleIcon {
+  width: 100px;
+}
+.rectangleIcon {
+  width: 121.58px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-51xl);
+}
+.rectangleDiv {
+  position: relative;
+  background-color: var(--orange);
+  width: 10px;
+  height: 72px;
+}
+.ourClients {
+  position: relative;
+  line-height: 72px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.rectangleGroup {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 162.5px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.clients {
+  position: absolute;
+  top: 3093px;
+  left: calc(50% - 640px);
+  width: 1281px;
+  height: 217px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-33xl);
+  color: var(--white);
+  font-family: var(--font-montserrat);
+}

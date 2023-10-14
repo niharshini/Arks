@@ -1,0 +1,7 @@
+.homeRevised {
+  position: relative;
+  background-color: var(--color-gray-400);
+  width: 100%;
+  height: 4278px;
+  overflow: hidden;
+}

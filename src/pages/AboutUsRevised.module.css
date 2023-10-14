@@ -1,0 +1,7 @@
+.aboutUsRevised {
+  position: relative;
+  background-color: var(--color-gray-400);
+  width: 100%;
+  height: 3180px;
+  overflow: hidden;
+}
