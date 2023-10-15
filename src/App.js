@@ -56,8 +56,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomeRevised2 />} />
-      <Route path="/about-us-revised" element={<AboutUsRevised />} />
-      <Route path="/home-revised" element={<HomeRevised />} />
     </Routes>
   );
 }

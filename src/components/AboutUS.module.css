@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 720px;
+  width: 800px;
   height: 600px;
   object-fit: cover;
 }
@@ -109,8 +109,8 @@
 .aboutUs,
 .rectangleParent {
   position: absolute;
-  left: 0;
-  width: 1440px;
+  left: 1%;
+  width: 95%;
 }
 .rectangleParent {
   bottom: 120px;

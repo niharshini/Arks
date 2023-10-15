@@ -7,11 +7,16 @@
   object-fit: cover;
 }
 .frameChild {
-  position: relative;
+  /* position: relative;
   border-radius: var(--br-lgi);
   background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
   width: 10px;
-  height: 184px;
+  height: 184px; */
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-lgi);
+  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+  height: 136px;
 }
 .enquireUs {
   position: relative;
@@ -52,7 +57,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-base);
+  gap: var(--gap-5xs);
 }
 .loremIpsumDolor1 {
   position: relative;
@@ -99,15 +104,16 @@
 }
 .contactInner {
   top: 168px;
-  left: 486px;
+  left: 655px;
   background-color: var(--white);
-  width: 926px;
+  width: 52%;
   height: 504px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .contact {
   top: calc(50% + 1620.5px);
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 840px;
   text-align: left;
   font-size: var(--group-2-h6-size);

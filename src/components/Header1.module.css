@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   background-color: var(--color-darkslategray);
-  width: 1440px;
+  width: 100%;
   height: 120px;
   overflow: hidden;
   opacity: 0.4;
@@ -73,14 +73,14 @@
 .logoParent {
   position: absolute;
   top: 23.51px;
-  left: 160px;
+  left: 341px;
   width: 1120px;
   height: 72px;
 }
 .frameParent {
   top: 0;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 120px;
   text-align: left;
   font-size: var(--font-size-base);

@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 840px;
   object-fit: cover;
 }
@@ -98,7 +98,7 @@
 .frameParent {
   position: absolute;
   top: calc(50% - 225px);
-  left: 35px;
+  left: 125px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -119,7 +119,7 @@
 }
 .careers {
   top: 3295px;
-  width: 1440px;
+  width: 100%;
   text-align: left;
   font-size: var(--group-2-h6-size);
   color: var(--white);

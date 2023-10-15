@@ -15,10 +15,10 @@ const Header1 = () => {
             <div className={styles.capabilities}>Capabilities</div>
             <div className={styles.capabilities}>Products</div>
             <div className={styles.capabilities}>Services</div>
-            <div className={styles.capabilities}>About us</div>
+            <div className={styles.capabilities}>About&nbsp;us</div>
             <div className={styles.capabilities}>Careers</div>
             <div className={styles.capabilities}>Community</div>
-            <div className={styles.capabilities}>Contact us</div>
+            <div className={styles.capabilities}>Contact&nbsp;us</div>
           </div>
         </div>
       </div>
