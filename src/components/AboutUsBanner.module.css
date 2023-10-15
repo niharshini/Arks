@@ -5,4 +5,8 @@
   width: 1440px;
   height: 800px;
   overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-inter);
 }

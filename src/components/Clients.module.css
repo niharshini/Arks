@@ -21,7 +21,7 @@
 }
 .rectangleParent {
   position: absolute;
-  top: 120px;
+  top: 184px;
   left: 0;
   display: flex;
   flex-direction: row;
@@ -30,36 +30,88 @@
   gap: var(--gap-51xl);
 }
 .rectangleDiv {
+  flex: 1;
   position: relative;
-  background-color: var(--orange);
-  width: 10px;
-  height: 72px;
+  border-radius: var(--br-lgi);
+  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+  height: 136px;
 }
 .ourClients {
   position: relative;
-  line-height: 72px;
-  text-transform: capitalize;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  width: 552px;
+}
+.loremIpsumDolor,
+.ourClients {
   font-weight: 600;
+}
+.b,
+.elitSed {
+  font-family: var(--font-inter);
+}
+.elitSed {
+  font-weight: 600;
+}
+.loremIpsumDolorSitAmetCon {
+  margin: 0;
+}
+.loremIpsumR {
+  margin: 0;
+  font-weight: 600;
+}
+.loremIpsumDolorContainer1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.loremIpsumDolorContainer {
+  position: relative;
+  font-size: var(--font-size-13xl);
+  line-height: 48px;
+  color: var(--black-shade);
+  display: flex;
+  align-items: center;
+  width: 930.5px;
+  font-family: var(--font-inter);
+}
+.ourClientsParent {
+  width: 552px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
 }
 .rectangleGroup {
   position: absolute;
   top: 0;
-  left: calc(50% - 162.5px);
+  left: 0;
+  width: 578px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   gap: var(--gap-base);
 }
-.clients {
+.clients,
+.frame {
   position: absolute;
-  top: 3093px;
+  overflow: hidden;
+}
+.frame {
+  top: calc(50% - 142px);
   left: calc(50% - 640px);
   width: 1281px;
-  height: 217px;
-  overflow: hidden;
+  height: 284px;
+}
+.clients {
+  top: 4135px;
+  left: 0;
+  width: 1440px;
+  height: 444px;
   text-align: left;
-  font-size: var(--font-size-33xl);
-  color: var(--white);
+  font-size: var(--group-2-h6-size);
+  color: var(--orange);
   font-family: var(--font-montserrat);
 }
