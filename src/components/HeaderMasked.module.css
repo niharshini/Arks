@@ -1,13 +1,89 @@
 .groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: var(--color-darkslategray);
+  width: 1440px;
+  height: 120px;
   overflow: hidden;
   opacity: 0.4;
 }
-.frameParent,
-.groupChild {
+.frameChild,
+.image1Icon,
+.logo {
   position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.image1Icon {
+  width: 100%;
+  right: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frameChild,
+.logo {
+  width: 11.07%;
+  right: 88.93%;
+}
+.frameChild {
+  height: 12.5%;
+  width: 2.31%;
+  top: 87.5%;
+  right: 96.32%;
+  left: 1.37%;
+  border-radius: var(--br-10xs);
+  background-color: var(--orange);
+}
+.home {
+  color: var(--orange);
+}
+.capabilities,
+.home {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+.homeParent {
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 25%;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+}
+.rectangleParent {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  width: 910px;
+  height: 32px;
+}
+.frameParent,
+.logoParent {
+  position: absolute;
+  top: 23.51px;
+  left: 160px;
+  width: 1120px;
+  height: 72px;
+}
+.frameParent {
   top: 0;
   left: 0;
   width: 1440px;
   height: 120px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-inter);
 }
