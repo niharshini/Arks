@@ -1,0 +1,190 @@
+.frameChild {
+  position: relative;
+  border-radius: var(--br-lgi);
+  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+  width: 10px;
+  height: 136px;
+}
+.whatWeCan {
+  position: relative;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  width: 552px;
+}
+.loremIpsumDolor,
+.whatWeCan {
+  font-weight: 600;
+}
+.b,
+.elitSed {
+  font-family: var(--font-inter);
+}
+.elitSed {
+  font-weight: 600;
+}
+.loremIpsumDolorSitAmetCon {
+  margin: 0;
+}
+.loremIpsumR {
+  margin: 0;
+  font-weight: 600;
+}
+.loremIpsumDolorContainer1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.loremIpsumDolorContainer {
+  position: relative;
+  font-size: var(--font-size-13xl);
+  line-height: 48px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  width: 969.02px;
+  font-family: var(--font-inter);
+}
+.whatWeCanDoParent {
+  width: 1188px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 578px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: left;
+}
+.productName {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  line-height: 32px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.loremIpsumDolor1 {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 121px);
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 242px;
+}
+.productNameParent {
+  position: absolute;
+  top: 184px;
+  left: 11px;
+  width: 242px;
+  height: 88px;
+}
+.productImagesChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.productImages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xl) var(--br-5xl) 0 0;
+  width: 264px;
+  height: 160px;
+}
+.component1 {
+  position: relative;
+  border-radius: var(--br-5xl);
+  width: 264px;
+  height: 296px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.productImagesItem {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xl) var(--br-5xl) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.component1Parent {
+  position: absolute;
+  top: 184px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-56xl);
+  font-size: var(--font-size-5xl);
+}
+.explore {
+  position: relative;
+  letter-spacing: 1.6px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.button {
+  position: absolute;
+  top: 528px;
+  left: calc(50% - 113.5px);
+  border-radius: var(--br-5xs);
+  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-13xl);
+  font-size: var(--font-size-base);
+  color: var(--white);
+}
+.frameParent {
+  position: absolute;
+  top: calc(50% - 288px);
+  left: 79.5px;
+  width: 1281px;
+  height: 576px;
+}
+.products {
+  position: absolute;
+  top: 1639px;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1440px;
+  height: 816px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--group-2-h6-size);
+  color: var(--orange);
+  font-family: var(--font-montserrat);
+}

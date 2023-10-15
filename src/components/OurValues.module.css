@@ -1,0 +1,67 @@
+.frameChild {
+  position: relative;
+  border-radius: var(--br-9xs);
+  width: 645px;
+  height: 360px;
+  object-fit: cover;
+}
+.frameItem {
+  position: relative;
+  background-color: var(--orange);
+  width: 10px;
+  height: 72px;
+}
+.ourValues {
+  position: relative;
+  line-height: 72px;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 545px;
+  flex-shrink: 0;
+}
+.rectangleGroup {
+  width: 571px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.loremIpsumDolor {
+  margin: 0;
+}
+.loremIpsumDolorContainer {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 571px;
+}
+.frameParent,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  width: 571px;
+  flex-direction: column;
+  gap: var(--gap-29xl);
+}
+.rectangleParent {
+  position: absolute;
+  top: 2240px;
+  left: 80px;
+  height: 360px;
+  flex-direction: row;
+  gap: var(--gap-45xl);
+  text-align: left;
+  font-size: var(--font-size-33xl);
+  color: var(--white);
+  font-family: var(--font-montserrat);
+}
