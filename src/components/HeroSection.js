@@ -7,7 +7,7 @@ const HeroSection = () => {
       <img
         className={styles.egvytvF8607c44f6a4612f7de80b3Icon}
         alt=""
-        src="/egvytv-f8607c44f6a4612f7de80b312b12709b-000000-000021-1-1@2x.png"
+        src="./egvytv-f8607c44f6a4612f7de80b312b12709b-000000-000021-1-1@2x.png"
       />
       <div className={styles.heroSectionChild} />
       <div className={styles.button}>
