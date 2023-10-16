@@ -54,8 +54,8 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes basename={"/arks"}>
-      <Route path="/" element={<HomeRevised2 />} />
+    <Routes>
+      <Route path="/arks" element={<HomeRevised2 />} />
     </Routes>
   );
 }
