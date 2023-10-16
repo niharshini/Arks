@@ -3,7 +3,7 @@ import styles from "./OurValues.module.css";
 const OurValues = () => {
   return (
     <div className={styles.rectangleParent}>
-      <img className={styles.frameChild} alt="" src="/rectangle-222@2x.png" />
+      <img className={styles.frameChild} alt="" src="./rectangle-222@2x.png" />
       <div className={styles.frameParent}>
         <div className={styles.rectangleGroup}>
           <div className={styles.frameItem} />

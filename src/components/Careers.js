@@ -6,7 +6,7 @@ const Careers = () => {
       <img
         className={styles.businessPeopleCasualMeetingIcon}
         alt=""
-        src="/businesspeoplecasualmeeting-1@2x.png"
+        src="./businesspeoplecasualmeeting-1@2x.png"
       />
       <div className={styles.careersInner}>
         <div className={styles.frameParent}>

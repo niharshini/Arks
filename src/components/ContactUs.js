@@ -3,7 +3,11 @@ import styles from "./ContactUs.module.css";
 const ContactUs = () => {
   return (
     <div className={styles.contact}>
-      <img className={styles.contactChild} alt="" src="/rectangle-992@2x.png" />
+      <img
+        className={styles.contactChild}
+        alt=""
+        src="./rectangle-992@2x.png"
+      />
       <div className={styles.contactInner}>
         <div className={styles.frameParent}>
           <div className={styles.rectangleParent}>

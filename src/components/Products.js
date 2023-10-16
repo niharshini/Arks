@@ -36,7 +36,7 @@ const Products = () => {
               <img
                 className={styles.productImagesChild}
                 alt=""
-                src="/rectangle-961@2x.png"
+                src="./rectangle-961@2x.png"
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ const Products = () => {
               <img
                 className={styles.productImagesItem}
                 alt=""
-                src="/rectangle-97@2x.png"
+                src="./rectangle-97@2x.png"
               />
             </div>
           </div>
@@ -66,7 +66,7 @@ const Products = () => {
               <img
                 className={styles.productImagesItem}
                 alt=""
-                src="/rectangle-98@2x.png"
+                src="./rectangle-98@2x.png"
               />
             </div>
           </div>
@@ -81,7 +81,7 @@ const Products = () => {
               <img
                 className={styles.productImagesChild}
                 alt=""
-                src="/rectangle-961@2x.png"
+                src="./rectangle-961@2x.png"
               />
             </div>
           </div>

@@ -23,7 +23,7 @@ const OurVision = () => {
           >{`adipiscing elit, sed Lorem ipsum dolor sit amet consectetur adipiscing elit,sed Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem dolor sit amet consectetur adipiscing elit, sed Lorem ipsum dolor sit ametmconsectetur adipiscing elit, sed Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum dolor sit amet consectetur adipiscing elit,sed Lorem ipsum dolor sit amet consectetur adipiscing elit, sed  `}</p>
         </div>
       </div>
-      <img className={styles.frameItem} alt="" src="/rectangle-221@2x.png" />
+      <img className={styles.frameItem} alt="" src="./rectangle-221@2x.png" />
     </div>
   );
 };

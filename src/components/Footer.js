@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className={styles.footer3}>
       <div className={styles.vectorParent}>
-        <img className={styles.groupChild} alt="" src="/line-11.svg" />
+        <img className={styles.groupChild} alt="" src="./line-11.svg" />
         <div className={styles.copyright2023}>
           Copyright © 2023 ARKS MicroElectronics India Pvt.Ltd. All rights
           reserved.
@@ -29,22 +29,22 @@ const Footer = () => {
               <img
                 className={styles.instagramIcon}
                 alt=""
-                src="/instagram@2x.png"
+                src="./instagram@2x.png"
               />
               <img
                 className={styles.instagramIcon}
                 alt=""
-                src="/linkedin@2x.png"
+                src="./linkedin@2x.png"
               />
               <img
                 className={styles.instagramIcon}
                 alt=""
-                src="/twitter@2x.png"
+                src="./twitter@2x.png"
               />
               <img
                 className={styles.instagramIcon}
                 alt=""
-                src="/facebook@2x.png"
+                src="./facebook@2x.png"
               />
             </div>
           </div>
@@ -53,12 +53,12 @@ const Footer = () => {
               <img
                 className={styles.instagramIcon}
                 alt=""
-                src="/gmail@2x.png"
+                src="./gmail@2x.png"
               />
               <div className={styles.capabilities}>info@arksindia.com</div>
             </div>
             <div className={styles.phoneParent}>
-              <img className={styles.phoneIcon} alt="" src="/phone@2x.png" />
+              <img className={styles.phoneIcon} alt="" src="./phone@2x.png" />
               <div className={styles.div}>
                 <p className={styles.p}>+91-891-6522044</p>
                 <p className={styles.p}>+91-998-5197555</p>
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
         <div className={styles.logoParent}>
           <div className={styles.logo}>
-            <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
+            <img className={styles.image1Icon} alt="" src="./image-1@2x.png" />
           </div>
           <div className={styles.plotNo5PadmanayaniContainer}>
             <p className={styles.p}>Plot No:5, Padmanayani Nilayam,</p>

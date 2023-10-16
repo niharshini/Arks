@@ -6,7 +6,7 @@ const HeaderMasked = () => {
       <div className={styles.groupChild} />
       <div className={styles.logoParent}>
         <div className={styles.logo}>
-          <img className={styles.image1Icon} alt="" src="/image-12@2x.png" />
+          <img className={styles.image1Icon} alt="" src="./image-12@2x.png" />
         </div>
         <div className={styles.rectangleParent}>
           <div className={styles.frameChild} />
