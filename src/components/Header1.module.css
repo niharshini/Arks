@@ -73,9 +73,10 @@
 .logoParent {
   position: absolute;
   top: 23.51px;
-  left: 341px;
+  /* left: 15%; */
   width: 1120px;
   height: 72px;
+  left: calc(50vw - (1120px / 2)); 
 }
 .frameParent {
   top: 0;

@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 800px;
+  width: 49%;
   height: 600px;
   object-fit: cover;
 }
@@ -99,7 +99,7 @@
 .frameParent {
   position: absolute;
   top: calc(50% - 212px);
-  left: 900px;
+  left: 53%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

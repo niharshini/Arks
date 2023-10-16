@@ -67,7 +67,7 @@
 .productName {
   position: absolute;
   top: 0;
-  left: 61px;
+  left: 26px;
   line-height: 32px;
   text-transform: capitalize;
   font-weight: 600;
@@ -75,7 +75,7 @@
 .loremIpsumDolor1 {
   position: absolute;
   top: 40px;
-  left: calc(50% - 91px);
+  left: calc(50% - 125px);
   font-size: var(--font-size-base);
   line-height: 24px;
   font-weight: 500;
@@ -111,13 +111,13 @@
   top: 0;
   left: 0;
   border-radius: var(--br-5xl) var(--br-5xl) 0 0;
-  width: 330px;
+  width: 254px;
   height: 160px;
 }
 .component1 {
   position: relative;
   border-radius: var(--br-5xl);
-  width: 330px;
+  width: 254px;
   height: 296px;
   overflow: hidden;
   flex-shrink: 0;
@@ -126,7 +126,7 @@
 .component1:hover {
   position: relative;
   border-radius: var(--br-5xl);
-  width: 330px;
+  width: 254px;
   height: 296px;
   overflow: hidden;
   flex-shrink: 0;
@@ -168,7 +168,7 @@
 .button {
   position: absolute;
   top: 528px;
-  left: 54%;
+  left: 47%;
   border-radius: var(--br-5xs);
   background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
   display: flex;
