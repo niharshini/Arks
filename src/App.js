@@ -5,9 +5,10 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import AboutUsRevised3 from "./pages/AboutUsRevised3";
 import HomeRevised2 from "./pages/HomeRevised2";
-import AboutUsRevised from "./pages/AboutUsRevised";
 import HomeRevised from "./pages/HomeRevised";
+import AboutUsRevised from "./pages/AboutUsRevised";
 
 function App() {
   const action = useNavigationType();
@@ -29,11 +30,15 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/about-us-revised":
+      case "/home-revised-2":
         title = "";
         metaDescription = "";
         break;
       case "/home-revised":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/about-us-revised":
         title = "";
         metaDescription = "";
         break;
@@ -55,9 +60,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<HomeRevised2 />} />
-      <Route path="/about-us-revised" element={<AboutUsRevised />} />
+      <Route path="/" element={<AboutUsRevised3 />} />
+      <Route path="/home-revised-2" element={<HomeRevised2 />} />
       <Route path="/home-revised" element={<HomeRevised />} />
+      <Route path="/about-us-revised" element={<AboutUsRevised />} />
     </Routes>
   );
 }
