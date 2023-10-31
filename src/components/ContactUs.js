@@ -6,7 +6,7 @@ const ContactUs = () => {
       <img
         className={styles.contactChild}
         alt=""
-        src="./rectangle-992@2x.png"
+        src="/rectangle-9921@2x.png"
       />
       <div className={styles.contactInner}>
         <div className={styles.frameParent}>
