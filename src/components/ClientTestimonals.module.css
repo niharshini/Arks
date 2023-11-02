@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 909px;
   object-fit: cover;
 }
@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 909px;
 }
 .testimonals1,
@@ -103,7 +103,7 @@
 .frameParent {
   position: absolute;
   top: calc(50% - 394.5px);
-  left: 150px;
+  left: calc(50vw - (1160px / 2));
   flex-direction: column;
   gap: var(--gap-29xl);
 }
@@ -111,7 +111,7 @@
   position: absolute;
   top: 2708px;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 909px;
   overflow: hidden;
   text-align: center;

@@ -60,11 +60,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/arks" element={<HomeRevised2 />} />
-      <Route path="/" element={<AboutUsRevised3 />} />
-      <Route path="/home-revised-2" element={<HomeRevised2 />} />
-      {/* <Route path="/home-revised" element={<HomeRevised />} /> */}
-      <Route path="/about-us-revised" element={<AboutUsRevised />} />
+      <Route path="/" element={<HomeRevised2 />} />
+      <Route path="/about-us" element={<AboutUsRevised3 />} />
     </Routes>
   );
 }

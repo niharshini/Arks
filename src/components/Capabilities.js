@@ -1,13 +1,13 @@
 import styles from "./Capabilities.module.css";
 
-const Capabilities = () => {
+const Capabilities = (props) => {
   return (
-    <div className={styles.capabilities}>
+    <div className={styles.capabilities} style={{ top: props.top }}>
       <div className={styles.rectangleParent}>
         <img
           className={styles.frameChild}
           alt=""
-          src="/rectangle-9911@2x.png"
+          src="./rectangle-9911@2x.png"
         />
         <div className={styles.frameParent}>
           <div className={styles.rectangleGroup}>

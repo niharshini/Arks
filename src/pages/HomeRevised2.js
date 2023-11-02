@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
-import AboutUS from "../components/AboutUS";
+import AboutUSHome from "../components/AboutUS";
 import Products from "../components/Products";
 import Capabilities from "../components/Capabilities";
 import ContactUs from "../components/ContactUs";
@@ -13,7 +13,7 @@ const HomeRevised2 = () => {
     <div className={styles.homeRevised2}>
       <Footer />
       <HeroSection />
-      <AboutUS />
+      <AboutUSHome />
       <Products />
       <Capabilities />
       <ContactUs />

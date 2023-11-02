@@ -8,7 +8,7 @@
   overflow: hidden;
   opacity: 0.4;
 }
-.frameChild,
+
 .image1Icon,
 .logo {
   position: absolute;
@@ -38,6 +38,7 @@
   left: 1.37%;
   border-radius: var(--br-10xs);
   background-color: var(--orange);
+  position: relative;
 }
 .home {
   color: var(--orange);
@@ -47,7 +48,9 @@
   position: relative;
   line-height: 24px;
   font-weight: 600;
+  color:var(--white);
 }
+
 .homeParent {
   position: absolute;
   height: 75%;

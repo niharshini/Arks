@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import styles from "./AboutUS.module.css";
 
-const AboutUS = () => {
+const AboutUSHome = (props) => {
   return (
-    <div className={styles.aboutUs}>
+    <div className={styles.aboutUs} style={{ top: props.top }}>
       <div className={styles.rectangleParent}>
         <img className={styles.frameChild} alt="" src="./rectangle-99@2x.png" />
         <div className={styles.frameParent}>
@@ -30,7 +31,12 @@ const AboutUS = () => {
             className={styles.loremIpsumDolor1}
           >{`Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit, sed Lorem ipsum dolor sit amet consectetur `}</div>
           <div className={styles.button}>
-            <div className={styles.explore}>about us</div>
+            <Link
+              to="/about-us"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <div className={styles.explore}>about us</div>
+            </Link>
           </div>
         </div>
       </div>
@@ -38,4 +44,4 @@ const AboutUS = () => {
   );
 };
 
-export default AboutUS;
+export default AboutUSHome;

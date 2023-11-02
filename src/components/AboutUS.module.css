@@ -125,3 +125,23 @@
   color: var(--orange);
   font-family: var(--font-montserrat);
 }
+
+/* .about-us-height{
+  top: 1268px;
+  height: 840px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--group-2-h6-size);
+  color: var(--orange);
+  font-family: var(--font-montserrat);
+}
+
+.home-height{
+  top:799px;
+  height: 840px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--group-2-h6-size);
+  color: var(--orange);
+  font-family: var(--font-montserrat);
+} */

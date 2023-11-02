@@ -14,7 +14,7 @@ const Testimonal = ({
     <div className={styles.iveBeenUsingThisWebHostiParent}>
       <div className={styles.iveBeenUsing}>{testimonialText}</div>
       <div className={styles.frameParent}>
-        <img className={styles.frameIcon} alt="" src="/frame.svg" />
+        <img className={styles.frameIcon} alt="" src="./frame.svg" />
         <img className={styles.frameIcon} alt="" src={customerTestimonial} />
         <img className={styles.frameIcon} alt="" src={testimonialContent} />
         <img className={styles.frameIcon} alt="" src={testimonialDescription} />
