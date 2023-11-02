@@ -1,0 +1,126 @@
+.frameChild {
+  position: relative;
+  border-radius: var(--br-lgi);
+  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+  width: 10px;
+  height: 88px;
+}
+.enquireUs,
+.howCanWe {
+  position: relative;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 552px;
+}
+.howCanWe {
+  font-size: var(--font-size-13xl);
+  line-height: 48px;
+  font-family: var(--font-inter);
+  color: var(--black-shade);
+  width: 550px;
+}
+.enquireUsParent {
+  width: 552px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.loremIpsumDolor {
+  position: relative;
+  font-family: var(--font-inter);
+  color: var(--black-shade);
+  display: inline-block;
+  width: 570px;
+}
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+}
+.enterYourName,
+.name {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+.enterYourName {
+  font-weight: 500;
+}
+.enterYourNameWrapper,
+.input {
+  display: flex;
+  justify-content: flex-start;
+}
+.enterYourNameWrapper {
+  border-radius: var(--br-10xs);
+  border: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+  width: 570px;
+  height: 56px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-xs);
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray);
+}
+.input {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+}
+.explore {
+  position: relative;
+  letter-spacing: 1.6px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.button {
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--black-shade);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-13xl);
+  text-align: center;
+  font-size: var(--font-size-base);
+  font-family: var(--font-montserrat);
+}
+.frameParent,
+.inputParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  color: var(--black-shade);
+  font-family: var(--font-inter);
+}
+.frameParent {
+  position: absolute;
+  top: 240px;
+  left: 80px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-113xl);
+  text-align: left;
+  font-size: var(--group-2-h6-size);
+  color: var(--orange);
+  font-family: var(--font-montserrat);
+}

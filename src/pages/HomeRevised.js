@@ -194,7 +194,7 @@ const HomeRevised = () => {
         <img
           className={styles.capabilitiesItem}
           alt=""
-          src="/rectangle-99111@2x.png"
+          src="/rectangle-991111@2x.png"
         />
         <div className={styles.frameContainer}>
           <div className={styles.rectangleContainer}>

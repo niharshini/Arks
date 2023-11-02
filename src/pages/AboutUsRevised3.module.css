@@ -222,6 +222,8 @@
 }
 .aboutUsBannerChild {
   background-color: #ebebeb;
+  background-color: var(--color-whitesmoke);
+  width: 1440px;
   height: 800px;
 }
 .groupItem {

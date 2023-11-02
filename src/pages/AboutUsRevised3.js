@@ -3,7 +3,7 @@ import ClientTestimonals from "../components/ClientTestimonals";
 import styles from "./AboutUsRevised3.module.css";
 import Footer from "../components/Footer";
 import Header1 from "../components/Header1";
-import AboutUSHome from "../components/AboutUs";
+import AboutUSHome from "../components/AboutUsHome";
 import Capabilities from "../components/Capabilities";
 
 const AboutUsRevised3 = () => {

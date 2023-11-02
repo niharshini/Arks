@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
-import AboutUSHome from "../components/AboutUs";
+import AboutUSHome from "../components/AboutUsHome";
 import Products from "../components/Products";
 import Capabilities from "../components/Capabilities";
 import ContactUs from "../components/ContactUs";

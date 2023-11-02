@@ -1,0 +1,109 @@
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720px;
+  height: 600px;
+  object-fit: cover;
+}
+.frameItem {
+  position: relative;
+  border-radius: var(--br-lgi);
+  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+  width: 10px;
+  height: 184px;
+}
+.qualityControl {
+  position: relative;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 552px;
+}
+.loremIpsumDolor {
+  font-weight: 600;
+}
+.b,
+.elitSed {
+  font-family: var(--font-inter);
+}
+.elitSed {
+  font-weight: 600;
+}
+.loremIpsumDolorSitAmetCon {
+  margin: 0;
+}
+.loremIpsumR {
+  margin: 0;
+  font-weight: 600;
+}
+.loremIpsumDolorContainer1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.loremIpsumDolorContainer {
+  position: relative;
+  font-size: var(--font-size-13xl);
+  line-height: 48px;
+  color: var(--black-shade);
+  display: flex;
+  align-items: center;
+  width: 550px;
+  font-family: var(--font-inter);
+}
+.qualityControlParent {
+  width: 552px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.rectangleGroup {
+  width: 578px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.loremIpsumDolor1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 32px;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--black-shade);
+  display: inline-block;
+  width: 570px;
+}
+.frameParent {
+  position: absolute;
+  top: calc(50% - 164px);
+  left: 782px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+}
+.qualtyControl,
+.rectangleParent {
+  position: absolute;
+  left: 0;
+  width: 1440px;
+}
+.rectangleParent {
+  top: calc(50% - 300px);
+  height: 600px;
+  overflow: hidden;
+}
+.qualtyControl {
+  top: 1581px;
+  height: 720px;
+  text-align: left;
+  font-size: var(--group-2-h6-size);
+  color: var(--orange);
+  font-family: var(--font-montserrat);
+}

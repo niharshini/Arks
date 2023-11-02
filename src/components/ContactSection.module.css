@@ -1,0 +1,41 @@
+.frameChild {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.div {
+  position: relative;
+  font-weight: 600;
+}
+.groupParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-13xl);
+}
+.infoarksindiacom {
+  position: relative;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+.frameParent {
+  position: absolute;
+  top: 744px;
+  left: calc(50% - 640px);
+  border-radius: var(--br-xs);
+  border: 1px solid var(--black-shade);
+  box-sizing: border-box;
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-21xl);
+  gap: var(--gap-266xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--black-shade);
+  font-family: var(--font-inter);
+}

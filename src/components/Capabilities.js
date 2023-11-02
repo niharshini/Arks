@@ -7,7 +7,7 @@ const Capabilities = (props) => {
         <img
           className={styles.frameChild}
           alt=""
-          src="./rectangle-9911@2x.png"
+          src="./rectangle-99111@2x.png"
         />
         <div className={styles.frameParent}>
           <div className={styles.rectangleGroup}>
