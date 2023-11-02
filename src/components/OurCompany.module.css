@@ -1,0 +1,73 @@
+.ourCompany1 {
+  position: relative;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 805px;
+}
+.loremIpsumDolor,
+.ourCompany1 {
+  font-weight: 600;
+}
+.loremIpsumDolorContainer1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.loremIpsumDolorContainer {
+  position: relative;
+  font-size: var(--font-size-13xl);
+  line-height: 48px;
+  color: var(--black-shade);
+  display: flex;
+  align-items: center;
+  width: 819px;
+  font-family: var(--font-inter);
+}
+.ourCompanyParent {
+  width: 805px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: var(--gap-5xs);
+}
+.loremIpsumDolor1 {
+  position: relative;
+  line-height: 32px;
+  font-weight: 500;
+  display: inline-block;
+  width: 1140px;
+}
+.frameParent,
+.loremIpsumDolorSitAmetConParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.loremIpsumDolorSitAmetConParent {
+  align-items: flex-start;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-5xl);
+  color: var(--black-shade);
+  font-family: var(--font-inter);
+}
+.frameParent {
+  position: absolute;
+  top: calc(50% - 114px);
+  left: calc(50% - 570px);
+  align-items: center;
+  gap: var(--gap-29xl);
+}
+.ourCompany {
+  position: absolute;
+  top: 800px;
+  left: 0;
+  width: 1440px;
+  height: 468px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--group-2-h6-size);
+  color: var(--orange);
+  font-family: var(--font-montserrat);
+}

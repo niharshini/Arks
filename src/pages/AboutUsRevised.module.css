@@ -241,7 +241,7 @@
   justify-content: flex-start;
 }
 .arksMicroelectronicsIndiaPvParent {
-  gap: 24px;
+  gap: var(--gap-5xl);
   font-size: var(--font-size-5xl);
   font-family: var(--font-inter);
 }

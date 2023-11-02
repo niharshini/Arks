@@ -4,7 +4,11 @@ const Capabilities = () => {
   return (
     <div className={styles.capabilities}>
       <div className={styles.rectangleParent}>
-        <img className={styles.frameChild} alt="" src="/rectangle-991@2x.png" />
+        <img
+          className={styles.frameChild}
+          alt=""
+          src="/rectangle-99111@2x.png"
+        />
         <div className={styles.frameParent}>
           <div className={styles.rectangleGroup}>
             <div className={styles.frameItem} />

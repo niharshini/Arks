@@ -1,0 +1,81 @@
+.groupChild,
+.groupItem {
+  border-radius: var(--br-5xs);
+}
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 584px;
+  height: 440px;
+  object-fit: cover;
+}
+.groupItem {
+  background: linear-gradient(0deg, #000, transparent);
+}
+.groupItem,
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 584px;
+  height: 440px;
+}
+.microController {
+  position: relative;
+  line-height: 48px;
+  font-weight: 600;
+}
+.loremIpsumDolor {
+  position: relative;
+  font-size: var(--group-2-h6-size);
+  line-height: 32px;
+  display: none;
+  width: 552px;
+}
+.explore {
+  position: relative;
+  letter-spacing: 1.6px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.arrowSmallRight1Icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button {
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-sm) 0;
+  gap: var(--gap-smi);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--orange);
+  font-family: var(--font-montserrat);
+}
+.microControllerParent {
+  position: absolute;
+  top: 312px;
+  left: calc(50% - 276px);
+  width: 552px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.property1default {
+  width: 584px;
+  height: 440px;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--white);
+  font-family: var(--font-inter);
+}

@@ -73,12 +73,12 @@ const HomeRevised = () => {
                 <img
                   className={styles.instagramIcon}
                   alt=""
-                  src="/gmail@2x.png"
+                  src="/gmail1@2x.png"
                 />
                 <div className={styles.capabilities}>info@arksindia.com</div>
               </div>
               <div className={styles.phoneParent}>
-                <img className={styles.phoneIcon} alt="" src="/phone@2x.png" />
+                <img className={styles.phoneIcon} alt="" src="/phone1@2x.png" />
                 <div className={styles.div}>
                   <p className={styles.p}>+91-891-6522044</p>
                   <p className={styles.p}>+91-998-5197555</p>
@@ -91,7 +91,11 @@ const HomeRevised = () => {
           </div>
           <div className={styles.logoParent}>
             <div className={styles.logo}>
-              <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
+              <img
+                className={styles.image1Icon}
+                alt=""
+                src="/image-11@2x.png"
+              />
             </div>
             <div className={styles.plotNo5PadmanayaniContainer}>
               <p className={styles.p}>Plot No:5, Padmanayani Nilayam,</p>
@@ -190,7 +194,7 @@ const HomeRevised = () => {
         <img
           className={styles.capabilitiesItem}
           alt=""
-          src="/rectangle-9911@2x.png"
+          src="/rectangle-991111@2x.png"
         />
         <div className={styles.frameContainer}>
           <div className={styles.rectangleContainer}>
