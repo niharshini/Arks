@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./ContactUs.module.css";
 
 const ContactUs = () => {
@@ -31,7 +32,14 @@ const ContactUs = () => {
             className={styles.loremIpsumDolor1}
           >{`Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit, sed Lorem ipsum dolor sit amet consectetur `}</div>
           <div className={styles.button}>
-            <div className={styles.explore}>Contact us</div>
+            <div className={styles.explore}>
+              <Link
+                to="/contact-us"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <div className={styles.explore}>Contact us</div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

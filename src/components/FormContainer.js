@@ -36,10 +36,10 @@ const FormContainer = () => {
       </div>
       <div className={styles.frameGroup}>
         <div className={styles.frameContainer}>
-          <img className={styles.frameIcon} alt="" src="/frame2.svg" />
+          <img className={styles.frameIcon} alt="" src="./frame2.svg" />
         </div>
         <div className={styles.frameContainer}>
-          <img className={styles.frameIcon} alt="" src="/frame3.svg" />
+          <img className={styles.frameIcon} alt="" src="./frame3.svg" />
         </div>
       </div>
     </div>

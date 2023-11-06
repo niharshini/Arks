@@ -33,7 +33,7 @@ const Header1 = () => {
           {/* <div className={styles.frameChild} /> */}
           <div className={styles.homeParent}>
             <NavLink
-              to="/"
+              to="/home"
               color="frameChild"
               className={"test"}
               style={({ isActive }) => getStyle(isActive)}
@@ -41,7 +41,12 @@ const Header1 = () => {
               Home
             </NavLink>
 
-            <div className={styles.capabilities}>Capabilities</div>
+            <NavLink
+              to="/capabilities"
+              style={({ isActive }) => getStyle(isActive)}
+            >
+              Capabilities
+            </NavLink>
             <div className={styles.capabilities}>Products</div>
             <div className={styles.capabilities}>Services</div>
             <NavLink
@@ -53,7 +58,12 @@ const Header1 = () => {
 
             <div className={styles.capabilities}>Careers</div>
             <div className={styles.capabilities}>Community</div>
-            <div className={styles.capabilities}>Contact&nbsp;us</div>
+            <NavLink
+              to="/contact-us"
+              style={({ isActive }) => getStyle(isActive)}
+            >
+              Contact&nbsp;us
+            </NavLink>
           </div>
         </div>
       </div>

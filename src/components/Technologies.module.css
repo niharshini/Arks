@@ -91,11 +91,12 @@
 .rectangleParent {
   position: absolute;
   left: 0;
-  width: 1440px;
 }
+
 .rectangleParent {
   top: calc(50% - 300px);
   height: 600px;
+  width: 100%;
 }
 .ourVision {
   top: 861px;
@@ -105,4 +106,5 @@
   font-size: var(--group-2-h6-size);
   color: var(--orange);
   font-family: var(--font-montserrat);
+  width: 100%;
 }

@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--gap-13xl);
+  gap: var(--gap-13xl);;
 }
 .infoarksindiacom {
   position: relative;
@@ -23,11 +23,11 @@
 .frameParent {
   position: absolute;
   top: 744px;
-  left: calc(50% - 640px);
+  left: 8%;
   border-radius: var(--br-xs);
   border: 1px solid var(--black-shade);
   box-sizing: border-box;
-  width: 1280px;
+  width: 84%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;

@@ -1,6 +1,17 @@
 import styles from "./HelpFormContainer.module.css";
 
 const HelpFormContainer = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      .then((result) => {
+          console.log(result)
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   return (
     <div className={styles.frameParent}>
       <div className={styles.frameGroup}>
@@ -35,7 +46,8 @@ const HelpFormContainer = () => {
           </div>
         </div>
         <div className={styles.button}>
-          <div className={styles.explore}>Submit</div>
+          <div className={styles.explore}><a href="mailto:email@example.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">Submit</a>
+        </div>
         </div>
       </div>
     </div>

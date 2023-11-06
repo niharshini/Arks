@@ -92,7 +92,7 @@
 .rectangleParent {
   position: absolute;
   left: 0;
-  width: 1440px;
+  width: 100%;
 }
 .rectangleParent {
   top: calc(50% - 300px);

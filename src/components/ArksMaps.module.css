@@ -1,8 +1,11 @@
 .enquiryRevised3Child {
   position: absolute;
-  top: 1085px;
-  left: 80px;
-  width: 1280px;
+  top: 1050px;
+  /* left: calc(50vw - 1280px/2); */
+  width: 84%;
+  left: 8%;
+  /* width: 1280px; */
   height: 686px;
+  border: "0";
   object-fit: cover;
 }

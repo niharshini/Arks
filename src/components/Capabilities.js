@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Capabilities.module.css";
 
 const Capabilities = (props) => {
@@ -34,7 +35,15 @@ const Capabilities = (props) => {
             className={styles.loremIpsumDolor1}
           >{`Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit, sed Lorem ipsum dolor sit amet consectetur `}</div>
           <div className={styles.button}>
-            <div className={styles.explore}>View capabilities</div>
+            <div className={styles.explore}>
+            <Link
+              to="/capabilities"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              <div className={styles.explore}>View capabilities</div>
+            </Link>
+            
+            </div>
           </div>
         </div>
       </div>
