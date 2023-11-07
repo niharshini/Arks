@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import AboutUSHome from "../components/AboutUsHome";
 import Products from "../components/Products";
@@ -11,7 +10,6 @@ import styles from "./HomeRevised2.module.css";
 const HomeRevised2 = () => {
   return (
     <div className={styles.homeRevised2}>
-      <Footer />
       <HeroSection />
       <AboutUSHome />
       <Products />

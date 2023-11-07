@@ -1,4 +1,3 @@
-import Header1 from "./Header1";
 import styles from "./HeroSection.module.css";
 
 const HeroSection = () => {
@@ -16,7 +15,6 @@ const HeroSection = () => {
       <div className={styles.innovatecustomizegrowWrapper}>
         <b className={styles.innovatecustomizegrow}>Innovate.customize.grow</b>
       </div>
-      <Header1 />
     </div>
   );
 };
