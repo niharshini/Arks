@@ -19,9 +19,6 @@ body {
   --font-size-lg: 18px;
   --font-size-5xl: 24px;
   --font-size-13xl: 32px;
-  --font-size-5xl: 24px;
-  --font-size-sm: 14px;
-  --font-size-lg: 18px;
   --font-size-60xl: 79px;
   --font-size-33xl: 52px;
 
@@ -35,7 +32,7 @@ body {
   --color-gray-300: #ffffff26;
   --orange: #ff6600;
   --color-darkslategray: #433d35;
-  --black-shade: #3d3c3c;
+  --black-shade: rgba(61, 60, 60, 0.78);
   --color-whitesmoke: #ebebeb;
   --color-darkgray: #959595;
 

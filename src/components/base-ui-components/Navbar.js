@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom";
-import styles from "../../styles/Header1.module.css";
+import styles from "../../styles/Navbar.module.css";
+import logo from "../../assets/common/brandLogo.png"
 import {useEffect, useLayoutEffect, useRef, useState} from "react";
 
 const Navbar = () => {
@@ -8,7 +9,7 @@ const Navbar = () => {
     const menuClick = useRef(null)
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 200) {
+            if (window.scrollY > 150) {
                 setSticky(true);
             } else {
                 setSticky(false);
@@ -72,7 +73,7 @@ const Navbar = () => {
         <div ref={menuClick} className={`${styles.mainContainer} ${isSticky ? styles.sticky : ""}`}>
             <div className={styles.navContent}>
                 <div className={styles.logoContainer}>
-                    <img className={styles.brandLogo} alt="" src="./image-12@2x.png"/>
+                    <img className={styles.brandLogo} alt="" src={logo}/>
                 </div>
 
                 <div className={`${styles.navItems} ${isMobileMenuShowing ? styles.open : ""}`}>

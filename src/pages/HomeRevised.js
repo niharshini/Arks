@@ -9,7 +9,7 @@ const HomeRevised = () => {
         <img
           className={styles.egvytvF8607c44f6a4612f7de80b3Icon}
           alt=""
-          src="/egvytv-f8607c44f6a4612f7de80b312b12709b-000000-000021-1-1@2x.png"
+          src="/src/assets/home-assets/heroBanner.png"
         />
         <div className={styles.heroSectionChild} />
         <div className={styles.button}>
@@ -291,7 +291,7 @@ const HomeRevised = () => {
           <img
             className={styles.frameChild3}
             alt=""
-            src="/rectangle-86@2x.png"
+            src="/bhel.png"
           />
           <img
             className={styles.frameChild1}

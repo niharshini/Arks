@@ -1,0 +1,38 @@
+.aboutUsContainer{
+  padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  font-size: var(--group-2-h6-size);
+  color: var(--orange);
+  font-family: var(--font-montserrat);
+}
+
+.reversed{
+  flex-direction: row-reverse!important;
+}
+
+.containerImage{
+  margin-left: 30px;
+  width: 45%;
+}
+
+.containerImageReverse{
+  width: 45%;
+}
+
+@media (max-width: 796px) {
+  .aboutUsContainer{
+    flex-direction: column-reverse!important;
+  }
+  .containerImage{
+    margin: 0!important;
+    width: 80%!important;
+  }
+  .containerImageReverse{
+    width: 80%;
+  }
+}

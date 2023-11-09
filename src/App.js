@@ -1,4 +1,5 @@
 import {useEffect} from "react";
+import "./styles/commonStyles.css"
 import {
     useNavigationType,
     useLocation,
@@ -68,7 +69,7 @@ function App() {
         <>
             <Navbar/>
             <Outlet/>
-            <Footer/>
+            {/*<Footer/>*/}
         </>
     );
 }
