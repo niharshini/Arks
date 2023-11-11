@@ -6,7 +6,7 @@
     font-size: var(--font-size-base);
     color: var(--white);
     font-family: var(--font-inter);
-    background-color: #3d3c3c;
+    background-color: rgba(67, 61, 53, 0.4);
 }
 
 .navContent {
@@ -38,7 +38,6 @@
     margin-left: 20px;
 }
 
-/* ---Sticky--- */
 .sticky {
     background-color: rgba(47, 46, 46, 0.78);
     position: fixed;

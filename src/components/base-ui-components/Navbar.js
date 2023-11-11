@@ -70,7 +70,7 @@ const Navbar = () => {
     }
 
     return (
-        <div ref={menuClick} className={`${styles.mainContainer} ${isSticky ? styles.sticky : ""}`}>
+        <div ref={menuClick} className={`${styles.mainContainer}`}>
             <div className={styles.navContent}>
                 <div className={styles.logoContainer}>
                     <img className={styles.brandLogo} alt="" src={logo}/>

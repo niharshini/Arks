@@ -17,7 +17,7 @@ export default function ImageDescriptionHolder({description, color, secondaryCol
                 </span>
                 </div>) : <></>}
                 {
-                    description["addLink"] ? <div>
+                    description["addLink"] ? <div className={styles.buttonContainer}>
                         <div className={"button"}>
                             <NavLink
                                 to={description["addLink"]["to"]}

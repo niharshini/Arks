@@ -66,4 +66,9 @@ span {
     .descriptionPrimary{
         font-size: var(--font-size-5xl);
     }
+    .buttonContainer{
+        display: flex;
+        justify-content: center;
+    }
+
 }

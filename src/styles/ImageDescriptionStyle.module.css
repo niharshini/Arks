@@ -30,9 +30,9 @@
   }
   .containerImage{
     margin: 0!important;
-    width: 80%!important;
+    width: 100%!important;
   }
   .containerImageReverse{
-    width: 80%;
+    width: 100%;
   }
 }
