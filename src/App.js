@@ -1,79 +1,77 @@
-import { useEffect } from "react";
+import {useEffect} from "react";
+import "./styles/commonStyles.css"
 import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
+    useNavigationType,
+    useLocation,
+    Outlet
 } from "react-router-dom";
-import CapabilitiesRevised from "./pages/CapabilitiesRevised";
-import EnquiryRevised3 from "./pages/EnquiryRevised3";
-import AboutUsRevised3 from "./pages/AboutUsRevised3";
-import HomeRevised2 from "./pages/HomeRevised2";
+import Navbar from "./components/base-ui-components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
-  const action = useNavigationType();
-  const location = useLocation();
-  const pathname = location.pathname;
+    const action = useNavigationType();
+    const location = useLocation();
+    const pathname = location.pathname;
 
-  useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
+    useEffect(() => {
+        if (action !== "POP") {
+            window.scrollTo(0, 0);
+        }
+    }, [action, pathname]);
 
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
+    useEffect(() => {
+        let title = "";
+        let metaDescription = "";
 
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/enquiry-revised-3":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/about-us-revised-3":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/home-revised-2":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/home-revised":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/about-us-revised":
-        title = "";
-        metaDescription = "";
-        break;
-    }
+        switch (pathname) {
+            case "/":
+                title = "";
+                metaDescription = "";
+                break;
+            case "/enquiry-revised-3":
+                title = "";
+                metaDescription = "";
+                break;
+            case "/about-us-revised-3":
+                title = "";
+                metaDescription = "";
+                break;
+            case "/home-revised-2":
+                title = "";
+                metaDescription = "";
+                break;
+            case "/home-revised":
+                title = "";
+                metaDescription = "";
+                break;
+            case "/about-us-revised":
+                title = "";
+                metaDescription = "";
+                break;
+        }
 
-    if (title) {
-      document.title = title;
-    }
+        if (title) {
+            document.title = title;
+        }
 
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
+        if (metaDescription) {
+            const metaDescriptionTag = document.querySelector(
+                'head > meta[name="description"]'
+            );
+            if (metaDescriptionTag) {
+                metaDescriptionTag.content = metaDescription;
+            }
+        }
+    }, [pathname]);
 
-  return (
-    <Routes>
-      <Route path="/" element={<HomeRevised2 />} />
-      <Route path="/home" element={<HomeRevised2 />} />
-      <Route path="/about-us" element={<AboutUsRevised3 />} />
-      <Route path="/capabilities" element={<CapabilitiesRevised />} />
-      <Route path="/contact-us" element={<EnquiryRevised3 />} />
-    </Routes>
-  );
+
+    return (
+        <>
+            <Navbar/>
+            <Outlet/>
+            {/*<Footer/>*/}
+        </>
+    );
 }
+
 export default App;

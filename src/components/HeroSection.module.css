@@ -1,29 +1,46 @@
-.egvytvF8607c44f6a4612f7de80b3Icon,
-.heroSectionChild {
+.heroSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-montserrat);
+}
+.heroImage,
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
-.egvytvF8607c44f6a4612f7de80b3Icon {
+
+.heroImage {
   object-fit: cover;
 }
-.heroSectionChild {
+
+.overlay {
   background-color: var(--color-gray-500);
 }
-.explore {
+
+.exploreButton {
   position: relative;
   letter-spacing: 1.6px;
   line-height: 16px;
   text-transform: uppercase;
   font-weight: 600;
 }
-.button {
+
+.buttonContainer {
   position: absolute;
   top: calc(50% + 145px);
   left: calc(50% - 76px);
-  border-radius: var(--br-5xs);
+  border-radius: 10px;
   border: 1px solid var(--white);
   display: flex;
   flex-direction: row;
@@ -32,8 +49,8 @@
   padding: var(--padding-base) var(--padding-13xl);
 }
 
-.button:hover {
-  border-radius: var(--br-5xs);
+.buttonContainer:hover {
+  border-radius: 10px;
   background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
   display: flex;
   flex-direction: row;
@@ -44,7 +61,18 @@
   /* color: var(--white); */
 }
 
-.innovatecustomizegrow {
+.taglineContainer {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-size: var(--font-size-60xl);
+}
+
+.tagline {
   position: relative;
   letter-spacing: 3.6px;
   line-height: 112px;
@@ -52,27 +80,20 @@
   text-shadow: 0 0 5px #000;
   mix-blend-mode: screen;
 }
-.innovatecustomizegrowWrapper {
-  position: absolute;
-  top: 328px;
-  left: calc(50% - 670px);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-3xs);
-  font-size: var(--font-size-60xl);
+
+/* Media Query for mobile screens (up to 768px) */
+@media (max-width: 768px) {
+  .taglineContainer {
+    font-size: 32px;
+    padding: 4px;
+  }
+
 }
-.heroSection {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 800px;
-  overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-base);
-  color: var(--white);
-  font-family: var(--font-montserrat);
+
+/* Media Query for tablet screens (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .taglineContainer {
+    font-size: 40px;
+    padding: 6px;
+  }
 }

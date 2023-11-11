@@ -68,7 +68,7 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.loremIpsumDolor1 {
+.descriptionSecondary {
   position: relative;
   font-size: var(--font-size-5xl);
   line-height: 32px;

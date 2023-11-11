@@ -1,0 +1,36 @@
+.galleryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 100px 0;
+}
+.gallery {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.image {
+    width: 150px;
+    height: auto;
+    margin: 0 50px
+}
+
+@media screen and (max-width: 796px){
+    .image{
+        width: 100px;
+        margin: 0 30px;
+    }
+}

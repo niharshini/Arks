@@ -1,0 +1,22 @@
+.button {
+    width: fit-content;
+    margin-top: 50px;
+    border-radius: var(--br-5xs);
+    background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-base) var(--padding-13xl);
+    font-size: var(--font-size-base);
+    color: var(--white);
+    font-family: var(--font-montserrat)!important;
+}
+
+.explore {
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}

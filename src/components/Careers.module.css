@@ -1,127 +1,22 @@
-.businessPeopleCasualMeetingIcon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 840px;
-  object-fit: cover;
-}
-.frameChild {
-  flex: 1;
+.careerContainer {
+  padding-top: 100px;
   position: relative;
-  border-radius: var(--br-lgi);
-  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
-  height: 184px;
-}
-.joinUs {
-  position: relative;
-  line-height: 32px;
   display: flex;
-  align-items: center;
-  width: 552px;
-}
-.joinUs,
-.loremIpsumDolor {
-  font-weight: 600;
-}
-.b,
-.elitSed {
-  font-family: var(--font-inter);
-}
-.elitSed {
-  font-weight: 600;
-}
-.loremIpsumDolorSitAmetCon {
-  margin: 0;
-}
-.loremIpsumR {
-  margin: 0;
-  font-weight: 600;
-}
-.loremIpsumDolorContainer1 {
-  line-break: anywhere;
-  width: 100%;
-}
-.loremIpsumDolorContainer {
-  position: relative;
-  font-size: var(--font-size-13xl);
-  line-height: 48px;
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  width: 550.04px;
-  font-family: var(--font-inter);
-}
-.joinUsParent {
-  width: 552px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-5xs);
-}
-.rectangleParent {
-  width: 578px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-base);
-  color: var(--orange);
-}
-.loremIpsumDolor1 {
-  position: relative;
-  font-size: var(--font-size-5xl);
-  line-height: 32px;
-  font-weight: 500;
-  font-family: var(--font-inter);
-  display: inline-block;
-  width: 570px;
-}
-.explore {
-  position: relative;
-  letter-spacing: 1.6px;
-  line-height: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.button {
-  border-radius: var(--br-5xs);
-  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: var(--padding-base) var(--padding-13xl);
-  font-size: var(--font-size-base);
-}
-.frameParent {
-  position: absolute;
-  top: calc(50% - 225px);
-  left: 125px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-29xl);
-}
-.careers,
-.careersInner {
-  position: absolute;
-  left: 0;
-  height: 840px;
-  overflow: hidden;
-}
-.careersInner {
-  top: 1px;
-  background: linear-gradient(90deg, #000, transparent);
-  width: 720px;
-}
-.careers {
-  top: 3295px;
   width: 100%;
-  text-align: left;
-  font-size: var(--group-2-h6-size);
-  color: var(--white);
-  font-family: var(--font-montserrat);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.descriptionComponent{
+  width: 50%;
+  color: var(--white)!important;
+}
+
+@media screen and (max-width: 796px){
+  .descriptionComponent{
+    width: fit-content;
+  }
 }

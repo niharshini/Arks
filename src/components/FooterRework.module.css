@@ -1,0 +1,67 @@
+.footer3 {
+    margin-top: 100px;
+    background-color: var(--color-gray-200);
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    font-size: var(--group-2-h6-size);
+    color: var(--white);
+    font-family: var(--group-2-h6);
+}
+
+.container {
+    width: 80%;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 85%;
+    margin-bottom: 2.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.image1Icon {
+    width: 35%;
+}
+
+.socialNetworkIcon {
+    width: 11%;
+    padding-right: 15px;
+}
+
+.contactIcon {
+    width: 11%;
+}
+
+.emailAddr {
+    position: relative;
+    bottom: 11px;
+    left: 15px;
+}
+
+.mobileNos {
+    position: relative;
+    bottom: 57px;
+    left: 55px;
+    font-size: var(--font-size-lg);
+}
+
+.phoneParent, .gmailParent {
+    margin-top: 1rem;
+}
+
+.capabilities {
+    margin-bottom: 1rem;
+}
+
+.followUsOn {
+    margin-bottom: 0.7rem;
+}

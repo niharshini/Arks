@@ -1,117 +1,22 @@
-.frameChild,
-.frameInner,
-.frameItem,
-.rectangleIcon {
-  position: relative;
-  width: 303.1px;
-  height: 100px;
-  object-fit: cover;
+.clientsContainer{
+  min-height: 30vh;
+  padding: 80px 0;
 }
-.frameInner,
-.frameItem,
-.rectangleIcon {
-  width: 238px;
-}
-.frameInner,
-.rectangleIcon {
-  width: 100px;
-}
-.rectangleIcon {
-  width: 121.58px;
-}
-.rectangleParent {
-  position: absolute;
-  top: 184px;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: var(--gap-51xl);
-}
-.rectangleDiv {
-  flex: 1;
-  position: relative;
-  border-radius: var(--br-lgi);
-  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
-  height: 136px;
-}
-.ourClients {
-  position: relative;
-  line-height: 32px;
-  display: flex;
-  align-items: center;
-  width: 552px;
-}
-.loremIpsumDolor,
-.ourClients {
-  font-weight: 600;
-}
-.b,
-.elitSed {
-  font-family: var(--font-inter);
-}
-.elitSed {
-  font-weight: 600;
-}
-.loremIpsumDolorSitAmetCon {
-  margin: 0;
-}
-.loremIpsumR {
-  margin: 0;
-  font-weight: 600;
-}
-.loremIpsumDolorContainer1 {
-  line-break: anywhere;
+
+.fullWidth{
   width: 100%;
+  margin-bottom: 50px;
 }
-.loremIpsumDolorContainer {
-  position: relative;
-  font-size: var(--font-size-13xl);
-  line-height: 48px;
-  color: var(--black-shade);
-  display: flex;
-  align-items: center;
-  width: 930.5px;
-  font-family: var(--font-inter);
+.descriptionComponent{
+  margin-left: 50px;
+  width: 80%;
+  color: var(--white)!important;
 }
-.ourClientsParent {
-  width: 552px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-5xs);
-}
-.rectangleGroup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 578px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-}
-.clients,
-.frame {
-  position: absolute;
-  overflow: hidden;
-}
-.frame {
-  top: calc(50% - 142px);
-  left: calc(50% - 640px);
-  width: 1281px;
-  height: 284px;
-}
-.clients {
-  top: 4135px;
-  left: 0;
-  width: 100%;
-  height: 444px;
-  text-align: left;
-  font-size: var(--group-2-h6-size);
-  color: var(--orange);
-  font-family: var(--font-montserrat);
+
+@media screen and (max-width: 796px) {
+  .descriptionComponent {
+    margin: 0 20px;
+    width: fit-content;
+    color: var(--white) !important;
+  }
 }

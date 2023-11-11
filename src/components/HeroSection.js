@@ -1,24 +1,24 @@
-import Header1 from "./Header1";
 import styles from "./HeroSection.module.css";
-
+import banner from "../assets/home-assets/heroBanner.png"
 const HeroSection = () => {
-  return (
-    <div className={styles.heroSection}>
-      <img
-        className={styles.egvytvF8607c44f6a4612f7de80b3Icon}
-        alt=""
-        src="./egvytv-f8607c44f6a4612f7de80b312b12709b-000000-000021-1-1@2x.png"
-      />
-      <div className={styles.heroSectionChild} />
-      <div className={styles.button}>
-        <div className={styles.explore}>explore</div>
-      </div>
-      <div className={styles.innovatecustomizegrowWrapper}>
-        <b className={styles.innovatecustomizegrow}>Innovate.customize.grow</b>
-      </div>
-      <Header1 />
-    </div>
-  );
+    return (
+        <div className={styles.heroSection}>
+            <img
+                className={styles.heroImage}
+                alt=""
+                src={banner}
+            />
+            <div className={styles.overlay} />
+
+            <div className={styles.taglineContainer}>
+                <b className={styles.tagline}>Innovate. Customize. Grow.</b>
+            </div>
+
+            <div className={styles.buttonContainer}>
+                <div className={styles.exploreButton}>Explore</div>
+            </div>
+        </div>
+    );
 };
 
 export default HeroSection;
