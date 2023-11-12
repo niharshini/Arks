@@ -1,6 +1,8 @@
 import styles from "./HeroSection.module.css";
 import banner from "../assets/home-assets/heroBanner.png"
+import CarouselCommon from "../root-components/carousel-common";
 const HeroSection = () => {
+
     return (
         <div className={styles.heroSection}>
             <img
@@ -11,7 +13,9 @@ const HeroSection = () => {
             <div className={styles.overlay} />
 
             <div className={styles.taglineContainer}>
-                <b className={styles.tagline}>Innovate. Customize. Grow.</b>
+                <span><b className={styles.tagline}>Innovate.</b></span>
+                <span><b className={styles.tagline}>Customize.</b></span>
+                <span><b className={styles.tagline}>Grow.</b></span>
             </div>
 
             <div className={styles.buttonContainer}>

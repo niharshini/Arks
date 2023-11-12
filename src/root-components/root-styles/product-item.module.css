@@ -39,6 +39,12 @@
 
 @media screen and (max-width: 796px){
     .container {
-        margin: 50px;
+        margin: 20px;
+    }
+    .image{
+        height: 250px;
+    }
+    .container{
+        width: 320px;
     }
 }

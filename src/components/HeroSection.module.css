@@ -82,18 +82,44 @@
 }
 
 /* Media Query for mobile screens (up to 768px) */
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   .taglineContainer {
-    font-size: 32px;
-    padding: 4px;
+    flex-direction: column;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
   }
 
+}
+@media (max-width: 769px) {
+  .taglineContainer {
+    font-size: 35px;
+  }
+  .taglineContainer span{
+    height: fit-content;
+  }
+  .taglineContainer .tagline{
+    margin: 0;
+  }
+
+}
+.taglineContainer .tagline{
+  margin-left: 30px;
 }
 
 /* Media Query for tablet screens (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1000px) and (max-width: 1100px) {
   .taglineContainer {
-    font-size: 40px;
-    padding: 6px;
+    font-size: 50px;
   }
 }
+  @media (min-width: 1100px) and (max-width: 1300px) {
+  .taglineContainer {
+    font-size: 65px;
+    padding: 6px;
+  }
+  .taglineContainer .tagline{
+    margin-left: 20px;
+  }
+}
+

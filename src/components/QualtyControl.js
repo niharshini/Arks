@@ -1,38 +1,23 @@
-import styles from "./QualtyControl.module.css";
+import styles from "../styles/ImageDescriptionStyle.module.css";
+import ImageDescriptionHolder from "../root-components/image-description-holder";
+import tableWritingImage from "../assets/home-assets/tableWriting.png";
 
-const QualtyControl = () => {
-  return (
-    <div className={styles.qualtyControl}>
-      <div className={styles.rectangleParent}>
-        <img className={styles.frameChild} alt="" src="./rectangle-991@2x.png" />
-        <div className={styles.frameParent}>
-          <div className={styles.rectangleGroup}>
-            <div className={styles.frameItem} />
-            <div className={styles.qualityControlParent}>
-              <div className={styles.qualityControl}>{`Quality Control `}</div>
-              <div className={styles.loremIpsumDolorContainer}>
-                <span className={styles.loremIpsumDolorContainer1}>
-                  <p className={styles.loremIpsumDolorSitAmetCon}>
-                    <span className={styles.loremIpsumDolor}>
-                      Lorem ipsum dolor sit amet consectetur adipiscing
-                    </span>
-                    <b className={styles.b}>{` `}</b>
-                    <span className={styles.elitSed}>elit, sed</span>
-                  </p>
-                  <p
-                    className={styles.loremIpsumR}
-                  >{`Lorem ipsum r sit amet consectetur `}</p>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            className={styles.loremIpsumDolor1}
-          >{`Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit, sed Lorem ipsum dolor sit amet consectetur `}</div>
-        </div>
-      </div>
-    </div>
-  );
+const QualityControl = ({reversed = false}) => {
+  return (<div className={`${styles.aboutUsContainer} ${reversed?styles.reversed:""}`}>
+    <ImageDescriptionHolder description={{
+      "primary": {
+        "question": `Quality Control`,
+        "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum r sit amet consectetur.",
+      },
+      "secondary": "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
+          " sed Lorem ipsum dolor sit amet consectetur",
+    }}/>
+    <img
+        className={!reversed?styles.containerImage:styles.containerImageReverse}
+        alt=""
+        src={tableWritingImage}
+    />
+  </div>);
 };
 
-export default QualtyControl;
+export default QualityControl;

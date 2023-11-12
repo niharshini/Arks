@@ -1,0 +1,79 @@
+.property-1-variant-2,
+.property-1-variant-2 * {
+    box-sizing: border-box;
+}
+.property-1-variant-2 {
+    width: 400px;
+    height: 440px;
+}
+.group-139 {
+    inset: 0;
+}
+.rectangle-112 {
+    border-radius: 8px;
+    width: 400px;
+    height: 440px;
+    left: 0px;
+    top: 0px;
+}
+.rectangle-113 {
+    background: var(
+            --black-shade,
+            linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%)
+    );
+    border-radius: 8px;
+    width: 584px;
+    height: 440px;
+    left: 0px;
+    top: 0px;
+}
+.frame-183 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 400px;
+    left: calc(50% - 276px);
+    top: 172px;
+}
+.micro-controller {
+    color: var(--white, #ffffff);
+    text-align: left;
+    font: 600 32px/48px "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.lorem-ipsum-dolor-sit-amet-consectetur-elit-sed-lorem-ipsum-sit-amet-consectetur-adipiscing-elit-sed-lorem-ipsum-dolor-sit-amet-consectetur-lorem-ipsum-dolor-sit-amet-consectetur-elit-sed {
+    color: var(--white, #ffffff);
+    text-align: left;
+    font: 400 20px/32px "Inter", sans-serif;
+    width: 552px;
+}
+.button {
+    border-radius: 8px;
+    padding: 14px 0px 14px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.explore {
+    color: var(--orange, #ff6600);
+    text-align: center;
+    font: 600 16px/16px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-small-right-1 {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}

@@ -1,15 +1,18 @@
 import styles from "./ContactUs.module.css";
 import ImageDescriptionHolder from "../root-components/image-description-holder";
 import {useEffect, useState} from "react";
+import CarouselCommon from "../root-components/carousel-common";
 
 const ContactUs = () => {
 
     const [isWindowBelowThreshold, setIsWindowBelowThreshold] = useState(false);
+    const [isForMobile, setForMobile] = useState(false);
 
     useEffect(() => {
         function handleResize() {
             const windowWidth = window.innerWidth;
             setIsWindowBelowThreshold(windowWidth < 1000);
+            setForMobile(windowWidth <= 796);
         }
 
         // Initial check on mount
@@ -22,12 +25,16 @@ const ContactUs = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
     return (
         <div className={styles.container}>
-            <img className={styles.image}
-                 src="https://blog.hubspot.com/hs-fs/hubfs/business-plan-Mar-24-2023-06-45-32-8780-PM.jpg?width=1190&height=800&name=business-plan-Mar-24-2023-06-45-32-8780-PM.jpg"
-                 alt="Your Image"/>
+            {!isForMobile?<img className={styles.image}
+                  src="https://blog.hubspot.com/hs-fs/hubfs/business-plan-Mar-24-2023-06-45-32-8780-PM.jpg?width=1190&height=800&name=business-plan-Mar-24-2023-06-45-32-8780-PM.jpg"
+                  alt="Your Image"/>:<></>}
             <div className={styles.overlayDiv}>
+                {isForMobile?<img
+                    src="https://blog.hubspot.com/hs-fs/hubfs/business-plan-Mar-24-2023-06-45-32-8780-PM.jpg?width=1190&height=800&name=business-plan-Mar-24-2023-06-45-32-8780-PM.jpg"
+                    alt="Your Image" className={styles.imageMobile}/>:<></>}
                 <ImageDescriptionHolder description={{
                     "primary": {
                         "question": `Enquire us`,
