@@ -1,30 +1,41 @@
 import styles from "./Testimonal.module.css";
+import star from "../assets/common/star.svg";
+import star_outline from "../assets/common/star-outline.svg";
 
 const Testimonal = ({
   testimonialText,
-  customerTestimonial,
-  testimonialContent,
-  testimonialDescription,
-  testimonialMessage,
-  testimonialText2,
-  testimonialMessageText,
-  testimonialDescription2,
+  rating,
+  profilePic,
+  profileName,
+  profileDesc,
 }) => {
+
+  const getStarsByRating = () => {
+    const noOfStars = rating ? rating : 5;
+    const stars = [];
+    for(let i= 0 ; i < noOfStars ; i++) {
+      stars.push(<img className={styles.frameIcon} alt="" src={star} />);
+    }
+
+    for(let i= 0 ; i < 5- noOfStars ; i++) {
+      stars.push(<img className={styles.frameIcon} alt="" src={star_outline} />);
+    }
+    return stars;
+  }
+
   return (
-    <div className={styles.iveBeenUsingThisWebHostiParent}>
-      <div className={styles.iveBeenUsing}>{testimonialText}</div>
-      <div className={styles.frameParent}>
-        <img className={styles.frameIcon} alt="" src="./frame.svg" />
-        <img className={styles.frameIcon} alt="" src={customerTestimonial} />
-        <img className={styles.frameIcon} alt="" src={testimonialContent} />
-        <img className={styles.frameIcon} alt="" src={testimonialDescription} />
-        <img className={styles.frameIcon} alt="" src={testimonialMessage} />
+    <div className={styles.testimonialParent}>
+      <div className={styles.testimonialText}>{testimonialText}</div>
+      <div className={styles.rating}>
+        {
+          getStarsByRating() 
+        }
       </div>
-      <div className={styles.ellipseParent}>
-        <img className={styles.frameChild} alt="" src={testimonialText2} />
-        <div className={styles.janeSmith}>{testimonialMessageText}</div>
+      <div className={styles.profile}>
+        <img className={styles.frameChild} alt="" src={profilePic} />
+        <div className={styles.janeSmith}>{profileName}</div>
         <div className={styles.freelanceDesigner}>
-          {testimonialDescription2}
+          {profileDesc}
         </div>
       </div>
     </div>
