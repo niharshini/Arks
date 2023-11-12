@@ -1,4 +1,4 @@
-.groupChild {
+/* .groupChild {
   position: absolute;
   height: 0.51%;
   width: 100.08%;
@@ -312,4 +312,13 @@
   font-size: var(--group-2-h6-size);
   color: var(--white);
   font-family: var(--group-2-h6);
+} */
+
+
+
+.aboutUsRevised3 {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 100vh;
 }
