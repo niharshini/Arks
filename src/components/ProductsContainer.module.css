@@ -1,0 +1,21 @@
+.productsContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.productsTitle {
+    width: 80%;
+    justify-content: center;
+    display: flex
+}
+@media screen and (max-width: 796px) {
+    .productsTitle {
+        width: 90%;
+        justify-content: center;
+        display: flex
+    }
+}

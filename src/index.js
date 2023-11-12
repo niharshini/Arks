@@ -2,13 +2,14 @@ import React from "react";
 import {createRoot} from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import "./global.css";
 import HomeRevised2 from "./pages/HomeRevised2";
 import AboutUsRevised3 from "./pages/AboutUsRevised3";
 import CapabilitiesRevised from "./pages/CapabilitiesRevised";
 import EnquiryRevised3 from "./pages/EnquiryRevised3";
 import Error from "./components/base-ui-components/Error";
+import ProductsPage from "./pages/ProductsPage";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -22,6 +23,8 @@ const router = createBrowserRouter([{
         path: '/about-us', element: <AboutUsRevised3/>,
     }, {
         path: '/capabilities', element: <CapabilitiesRevised/>,
+    },{
+        path: '/products', element: <ProductsPage/>,
     }, {
         path: '/contact-us', element: <EnquiryRevised3/>,
     }, {
