@@ -1,6 +1,9 @@
 import ImageDescriptionHolder from "../root-components/image-description-holder";
 import styles from "./HelpFormContainer.module.css";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const HelpFormContainer = () => {
   function sendEmail(e) {
     e.preventDefault();
@@ -40,6 +43,20 @@ const HelpFormContainer = () => {
     lineHeight: "normal",
   };
 
+  const triggerSubmit = (e) => {
+    e.preventDefault();
+
+    if (!e.target.name.value || !e.target.email.value || !e.target.message.value) {
+      notifyFailure();
+      return;
+    }
+    notifySuccess();
+  }
+
+  const notifySuccess = () => toast.success("Message Sent Successfully", {position: "bottom-left", autoClose: 2000});
+
+  const notifyFailure = () => toast.info("Please fill all the details", {position: "bottom-left", autoClose: 2000});
+
   return (
     <div className={styles.frameParent}>
       <div className={styles.fitContainer}>
@@ -51,7 +68,7 @@ const HelpFormContainer = () => {
           />
         </div>
 
-        <form className={styles.formParent}>
+        <form className={styles.formParent} onSubmit={triggerSubmit}>
           <div>
             <label>
               Name
@@ -67,8 +84,8 @@ const HelpFormContainer = () => {
             <label>
               Email
               <input
-                type="text"
-                name="name"
+                type="email"
+                name="email"
                 className={styles.inputBox}
                 placeholder="Enter your email"
               />
@@ -79,7 +96,7 @@ const HelpFormContainer = () => {
               Your Message
               <input
                 type="text"
-                name="name"
+                name="message"
                 className={styles.inputBox}
                 placeholder="Enter your message"
               />
@@ -87,10 +104,11 @@ const HelpFormContainer = () => {
           </div>
 
           <div className={styles.submitButtonContainer}>
-            <input type="submit" value="Submit" className={styles.button} />
+            <input type="submit" value="Submit" className={styles.button}/>
           </div>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };
