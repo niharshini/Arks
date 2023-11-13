@@ -5,7 +5,7 @@ export default function SectionHead({
                                         secondaryColor = "#fff",
                                         title= "Lorem Ipsum",
                                         primaryText ="Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum",
-                                        secondaryText="Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum"
+                                        secondaryText
                                     }) {
     return (
         <div className={styles.sectionContainer}>

@@ -1,4 +1,4 @@
-import Testimonal from "./Testimonal";
+import Testimonial from "./Testimonial";
 import styles from "./ClientTestimonals.module.css";
 import SectionHead from "../root-components/section-head";
 import CarouselCommon from "../root-components/carousel-common";
@@ -53,13 +53,13 @@ const ClientTestimonals = () => {
         </div>
 
         <CarouselCommon items={dummyItemConfig.map((item, index) =>
-            <Testimonal
+            <Testimonial
+                key={index}
               testimonialText={item.testimonialText}
               rating={item.rating}
               profilePic={item.profilePic}
               profileName={item.profileName}
               profileDesc={item.profileDesc}
-              key={index}
           />
             )} autoPlay={false} autoplayInterval={2500} buttonPosition={"flex-end"}/>
         <div className={styles.testimonialCards}>

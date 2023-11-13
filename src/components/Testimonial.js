@@ -2,7 +2,7 @@ import styles from "./Testimonal.module.css";
 import star from "../assets/common/star.svg";
 import star_outline from "../assets/common/star-outline.svg";
 
-const Testimonal = ({
+const Testimonial = ({
   testimonialText,
   rating,
   profilePic,
@@ -14,11 +14,11 @@ const Testimonal = ({
     const noOfStars = rating ? rating : 5;
     const stars = [];
     for(let i= 0 ; i < noOfStars ; i++) {
-      stars.push(<img className={styles.frameIcon} alt="" src={star} />);
+      stars.push(<img className={styles.frameIcon} alt="" src={star} key={i}/>);
     }
 
     for(let i= 0 ; i < 5- noOfStars ; i++) {
-      stars.push(<img className={styles.frameIcon} alt="" src={star_outline} />);
+      stars.push(<img className={styles.frameIcon} alt="" src={star_outline} key={5-1-i}/>);
     }
     return stars;
   }
@@ -42,4 +42,4 @@ const Testimonal = ({
   );
 };
 
-export default Testimonal;
+export default Testimonial;
