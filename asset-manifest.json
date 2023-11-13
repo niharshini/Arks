@@ -1,13 +1,30 @@
 {
   "files": {
-    "main.css": "./static/css/main.ceb8d03a.css",
-    "main.js": "./static/js/main.d15f2d80.js",
+    "main.css": "./static/css/main.dec5bc95.css",
+    "main.js": "./static/js/main.161f2a95.js",
+    "static/media/testimonials.png": "./static/media/testimonials.761a7d37eceac4a0fe8a.png",
+    "static/media/businesspeoplecasualmeeting-1@2x.png": "./static/media/businesspeoplecasualmeeting-1@2x.07419649039b50cb8b24.png",
+    "static/media/tableWriting.png": "./static/media/tableWriting.69f0b09b20c737f14bc8.png",
+    "static/media/heroBanner.png": "./static/media/heroBanner.224f50a7a076965b4980.png",
+    "static/media/writingSquare.png": "./static/media/writingSquare.05cb342a2563c00ff4c9.png",
+    "static/media/technologiesSideImg.png": "./static/media/technologiesSideImg.d80517a43f2b58da85a0.png",
+    "static/media/incis.png": "./static/media/incis.7420b14dc9413ed6df59.png",
+    "static/media/product-placeholder.png": "./static/media/product-placeholder.14aca1e16d0f1fe8af4b.png",
+    "static/media/profile2.png": "./static/media/profile2.4e3c7d5c89f250529c65.png",
+    "static/media/profile1.png": "./static/media/profile1.6b5f60bbd828178532aa.png",
+    "static/media/brandLogo.png": "./static/media/brandLogo.72a856fc63eec4ed6a2e.png",
+    "static/media/bhel.png": "./static/media/bhel.c1f2b67c67a54205f587.png",
+    "static/media/profile3.png": "./static/media/profile3.5f5f78194d8a9a2af83d.png",
+    "static/media/phone-contact.svg": "./static/media/phone-contact.beb244b6fa8c986f1d4c91dc3f035222.svg",
+    "static/media/email-contact.svg": "./static/media/email-contact.7dbfa1f50b67b350286bd5e4fdc550b6.svg",
+    "static/media/star-outline.svg": "./static/media/star-outline.6654fe1abf188029c0f9fa062f8a5a5e.svg",
     "index.html": "./index.html",
-    "main.ceb8d03a.css.map": "./static/css/main.ceb8d03a.css.map",
-    "main.d15f2d80.js.map": "./static/js/main.d15f2d80.js.map"
+    "static/media/star.svg": "./static/media/star.d4de04266b098bd4ead90cd0c153fd98.svg",
+    "main.dec5bc95.css.map": "./static/css/main.dec5bc95.css.map",
+    "main.161f2a95.js.map": "./static/js/main.161f2a95.js.map"
   },
   "entrypoints": [
-    "static/css/main.ceb8d03a.css",
-    "static/js/main.d15f2d80.js"
+    "static/css/main.dec5bc95.css",
+    "static/js/main.161f2a95.js"
   ]
 }
