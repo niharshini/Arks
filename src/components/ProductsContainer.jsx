@@ -2,6 +2,7 @@ import styles from "./ProductsContainer.module.css"
 import SectionHead from "../root-components/section-head";
 import {useEffect, useState} from "react";
 import ConsumerCard from "../root-components/consumerCard";
+import productImage from "../assets/common/product-placeholder.png"
 
 export default function ProductsContainer() {
     const [displayItems, setDisplayItems] = useState([])
@@ -10,48 +11,48 @@ export default function ProductsContainer() {
         {
             "type": "defense",
             "typeTitle": "Defense",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Defense Prod 1",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }, {
             "type": "defense",
             "typeTitle": "Defense",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Defense Prod 2",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }, {
             "type": "defense",
             "typeTitle": "Defense",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Defense Prod 3",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }, {
             "type": "application-boards",
             "typeTitle": "Application Boards",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Application Prod 1",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }, {
             "type": "application-boards",
             "typeTitle": "Application Boards",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Application Prod 2",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }, {
             "type": "application-boards",
             "typeTitle": "Application Boards",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Application Prod 3",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }, {
             "type": "industrial",
             "typeTitle": "Industrial",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Industrial Prod 2",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }, {
             "type": "industrial",
             "typeTitle": "Industrial",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Industrial Prod 1",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }, {
             "type": "industrial",
             "typeTitle": "Industrial",
-            "product-name": "Defense Prod 1",
-            "item-description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
+            "productName": "Industrial Prod 3",
+            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
         }
     ]
 
@@ -70,8 +71,8 @@ export default function ProductsContainer() {
         <div className={styles.productsContainer}>
             <div className={styles.productsTitle}>
                 <SectionHead
-                    title={"Lorem Ipsum 1111"}
-                    primaryText={"Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum"}
+                    title={"Our Products"}
+                    primaryText={"Lorem ipsum dolor sit amet consectetur adipiscing "}
                     color={"#000"}
                 />
             </div>
@@ -83,7 +84,7 @@ export default function ProductsContainer() {
                     }
                 }>All</span>
                 {
-                    keyMap !== [] ? <>
+                    keyMap ? <>
                         {
                             keyMap.map((item, index) =>
                                 <span onClick={
@@ -102,8 +103,8 @@ export default function ProductsContainer() {
                 {
                     displayItems.map(
                         (item, index)=> <ConsumerCard
-                            image={"https://images.pexels.com/photos/6791447/pexels-photo-6791447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
-                            title={"dummy title"} description={"dummy sekkkkkkkklkkkkkkkkkk"} to={"/contact-us"} key={index}/>
+                            image={productImage}
+                            title={item.productName} description={item.description} to={"/contact-us"} key={index}/>
                     )
                 }
             </div>

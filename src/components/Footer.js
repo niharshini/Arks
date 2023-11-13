@@ -8,6 +8,7 @@ import facebook from "../assets/common/facebook.png";
 import instagram from "../assets/common/instagram.png";
 import linkedin from "../assets/common/linkedin.png";
 import twitter from "../assets/common/twitter.png";
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,16 +29,16 @@ const Footer = () => {
             </div>
 
             <div className={styles.column1}>
-                <div className={styles.capabilities}>Capabilities</div>
-                <div className={styles.capabilities}>Careers</div>
-                <div className={styles.capabilities}>About Us</div>
-                <div className={styles.capabilities}>Enquiry</div>
+                <NavLink to={"/capabilities"} className={styles.capabilities}>Capabilities</NavLink>
+                <NavLink to={"/careers"} className={styles.capabilities}>Careers</NavLink>
+                <NavLink to={"/about-us"} className={styles.capabilities}>About Us</NavLink>
+                <NavLink to={"/contact-us"} className={styles.capabilities}>Enquiry</NavLink>
             </div>
 
             <div className={styles.column2}>  
-                <div className={styles.capabilities}>Products</div>
-                <div className={styles.capabilities}>Services</div>
-                <div className={styles.capabilities}>Community</div>
+                <NavLink to={"/products"} className={styles.capabilities}>Products</NavLink>
+                <NavLink to={"/services"} className={styles.capabilities}>Services</NavLink>
+                <NavLink to={"/community"} className={styles.capabilities}>Community</NavLink>
             </div>
 
 

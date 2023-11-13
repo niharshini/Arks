@@ -3,26 +3,27 @@ import styles from "./FormContainer.module.css";
 import {CardCapabilities} from "../root-components/capabilities-component/CardCapabilities";
 import CarouselCommon from "../root-components/carousel-common";
 import SectionHead from "../root-components/section-head";
+import productImage from "../assets/common/product-placeholder.png"
 
 const FormContainer = () => {
     const dummyItemConfig = [{
-        image: "./rectangle-961@2x.png",
+        image: productImage,
         title: 'Lorem Ipsum 1',
         description:
             'Lorem ipsum dolor sit amet, consectetur  elit.',
         to: "/home"
     }, {
-        image: 'https://placekitten.com/300/200',
+        image: productImage,
         title: 'Lorem Ipsum',
         description:
             'Lorem ipsum dolor sit amet, consectetur  elit.'
     },{
-        image: 'https://placekitten.com/300/200',
+        image: productImage,
         title: 'Lorem Ipsum 3',
         description:
             'Lorem ipsum dolor sit amet, consectetur  elit.'
     },{
-        image: 'https://placekitten.com/300/200',
+        image: productImage,
         title: 'Lorem Ipsum 4',
         description:
             'Lorem ipsum dolor sit amet, consectetur  elit.'

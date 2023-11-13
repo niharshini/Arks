@@ -68,6 +68,16 @@ hr {
 .followUsOnParent {
     margin-top: 3.5rem;
 }
+.column1 > a{
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+}
+.column2 > a{
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+}
 
 @media screen and (max-width: 796px){
     .content{
@@ -80,5 +90,8 @@ hr {
 
     .groupParent {
         margin-top: 2.5rem;
+    }
+    .followUsOn{
+        margin-bottom: 10px;
     }
 }
