@@ -1,6 +1,7 @@
 import styles from "./ProductsContainer.module.css"
 import SectionHead from "../root-components/section-head";
 import {useEffect, useState} from "react";
+import ConsumerCard from "../root-components/consumerCard";
 
 export default function ProductsContainer() {
     const [displayItems, setDisplayItems] = useState([])
@@ -71,12 +72,11 @@ export default function ProductsContainer() {
                 <SectionHead
                     title={"Lorem Ipsum 1111"}
                     primaryText={"Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum"}
-                    secondaryText={"Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum"}
                     color={"#000"}
                 />
             </div>
             <div>
-                <span onClick={
+                <span className={styles.tabTitle} onClick={
                     () => {
                         setDisplayItems(products)
                         console.log(products)
@@ -85,16 +85,26 @@ export default function ProductsContainer() {
                 {
                     keyMap !== [] ? <>
                         {
-                            keyMap.map(item =>
+                            keyMap.map((item, index) =>
                                 <span onClick={
                                     () => {
                                         setDisplayItems(item["items"])
                                         console.log(item["items"])
                                     }
-                                }>{item["typeTitle"]}</span>
+                                } className={`${styles.tabTitle} ${styles.tabTitleMap}`}
+                                      key={index}>{item["typeTitle"]}</span>
                             )
                         }
                     </> : <></>
+                }
+            </div>
+            <div className={styles.productItems}>
+                {
+                    displayItems.map(
+                        (item, index)=> <ConsumerCard
+                            image={"https://images.pexels.com/photos/6791447/pexels-photo-6791447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+                            title={"dummy title"} description={"dummy sekkkkkkkklkkkkkkkkkk"} to={"/contact-us"} key={index}/>
+                    )
                 }
             </div>
             <div>

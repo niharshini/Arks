@@ -37,12 +37,25 @@
 .testimonialParent {
   border-radius: var(--br-7xs);
   background-color: var(--color-gray-300);
-  width: 360px;
-  padding: var(--padding-21xl) var(--padding-11xl);
+  width: 300px;
+  height: 500px;
+  padding: var(--padding-11xl) var(--padding-base);
   box-sizing: border-box;
   gap: var(--gap-5xl);
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--white);
   font-family: var(--font-inter);
+}
+
+@media screen and (max-width: 798px){
+  .testimonialParent {
+    width: 300px;
+    font-size: var(--font-size-sm2);
+    padding: var(--padding-11xl) var(--padding-base);
+  }
+  .testimonialText {
+    line-height: var(--font-size-lg);
+    font-weight: 300;
+  }
 }
