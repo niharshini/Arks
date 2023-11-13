@@ -7,7 +7,7 @@ import "./global.css";
 import HomeRevised2 from "./pages/HomeRevised2";
 import AboutUsRevised3 from "./pages/AboutUsRevised3";
 import CapabilitiesRevised from "./pages/CapabilitiesRevised";
-import EnquiryRevised3 from "./pages/EnquiryRevised3";
+import EnquiryRevised3 from "./pages/ContactUs";
 import Error from "./components/base-ui-components/Error";
 import ProductsPage from "./pages/ProductsPage";
 

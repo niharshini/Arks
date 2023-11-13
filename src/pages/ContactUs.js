@@ -1,7 +1,8 @@
 import HelpFormContainer from "../components/HelpFormContainer";
 import ContactSection from "../components/ContactSection";
 import ArksMaps from "../components/ArksMaps";
-import styles from "./EnquiryRevised3.module.css";
+import styles from "./ContactUs.module.css";
+import Footer from "../components/Footer";
 
 const EnquiryRevised3 = () => {
   return (
@@ -9,6 +10,7 @@ const EnquiryRevised3 = () => {
       <HelpFormContainer />
       <ContactSection />
       <ArksMaps />
+      <Footer />
     </div>
   );
 };

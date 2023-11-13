@@ -1,54 +1,95 @@
+import ImageDescriptionHolder from "../root-components/image-description-holder";
 import styles from "./HelpFormContainer.module.css";
 
 const HelpFormContainer = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-          console.log(result)
-      }, (error) => {
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   }
+
+  const defaultData = {
+    primary: {
+      question: `Enquire Us`,
+      content: "How can we help?",
+    },
+    secondary:
+      "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
+      " sed Lorem ipsum dolor sit amet consectetur",
+  };
+
+  const style = {
+    marginLeft: 0,
+  };
+
+  const secondaryFontStyles = {
+    color: "rgba(61, 60, 60, 0.78), #3D3C3C",
+    fontFamily: "Inter",
+    fontSize: "20px",
+    fontStyle: "normal",
+    fontWeight: 400,
+    lineHeight: "normal",
+  };
 
   return (
     <div className={styles.frameParent}>
-      <div className={styles.frameGroup}>
-        <div className={styles.rectangleParent}>
-          <div className={styles.frameChild} />
-          <div className={styles.enquireUsParent}>
-            <div className={styles.enquireUs}>Enquire Us</div>
-            <div className={styles.howCanWe}>How can we help?</div>
+      <div className={styles.fitContainer}>
+        <div className={`${styles.container}`}>
+          <ImageDescriptionHolder
+            description={defaultData}
+            style={style}
+            secondaryFontStyles={secondaryFontStyles}
+          />
+        </div>
+
+        <form className={styles.formParent}>
+          <div>
+            <label>
+              Name
+              <input
+                type="text"
+                name="name"
+                className={styles.inputBox}
+                placeholder="Enter your name"
+              />
+            </label>
           </div>
-        </div>
-        <div
-          className={styles.loremIpsumDolor}
-        >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco `}</div>
-      </div>
-      <div className={styles.inputParent}>
-        <div className={styles.input}>
-          <div className={styles.name}>Name</div>
-          <div className={styles.enterYourNameWrapper}>
-            <div className={styles.enterYourName}>Enter your name</div>
+          <div className={styles.formElement}>
+            <label>
+              Email
+              <input
+                type="text"
+                name="name"
+                className={styles.inputBox}
+                placeholder="Enter your email"
+              />
+            </label>
           </div>
-        </div>
-        <div className={styles.input}>
-          <div className={styles.name}>Email</div>
-          <div className={styles.enterYourNameWrapper}>
-            <div className={styles.enterYourName}>Enter your email</div>
+          <div className={styles.formElement}>
+            <label>
+              Your Message
+              <input
+                type="text"
+                name="name"
+                className={styles.inputBox}
+                placeholder="Enter your message"
+              />
+            </label>
           </div>
-        </div>
-        <div className={styles.input}>
-          <div className={styles.name}>Your Message</div>
-          <div className={styles.enterYourNameWrapper}>
-            <div className={styles.enterYourName}>Enter your message</div>
+
+          <div className={styles.submitButtonContainer}>
+            <input type="submit" value="Submit" className={styles.button} />
           </div>
-        </div>
-        <div className={styles.button}>
-          <div className={styles.explore}><a href="mailto:email@example.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">Submit</a>
-        </div>
-        </div>
+        </form>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import styles from "./root-styles/image-description.module.css"
 import {NavLink} from "react-router-dom";
 
-export default function ImageDescriptionHolder({description, color, secondaryColor, style}) {
+export default function ImageDescriptionHolder({description, color, secondaryColor, style, secondaryFontStyles}) {
 
     return (
         <>
@@ -12,7 +12,7 @@ export default function ImageDescriptionHolder({description, color, secondaryCol
                           style={{color: color}}>{description["primary"]["content"]}</span>
                 </div>) : <></>}
                 {description["secondary"] ? (<div>
-                <span className={styles.descriptionSecondary} style={{color: secondaryColor}}>
+                <span className={styles.descriptionSecondary} style={{color: secondaryColor, ...secondaryFontStyles}}>
                     {description["secondary"]}
                 </span>
                 </div>) : <></>}
