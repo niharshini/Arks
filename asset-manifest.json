@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.19301544.css",
-    "main.js": "./static/js/main.534f0811.js",
+    "main.css": "./static/css/main.3ae4c02e.css",
+    "main.js": "./static/js/main.c10d0917.js",
     "static/media/home_banner.gif": "./static/media/home_banner.4757df8032ea22ac2f88.gif",
     "static/media/testimonials.png": "./static/media/testimonials.761a7d37eceac4a0fe8a.png",
-    "static/media/businesspeoplecasualmeeting-1@2x.png": "./static/media/businesspeoplecasualmeeting-1@2x.07419649039b50cb8b24.png",
     "static/media/tableWriting.png": "./static/media/tableWriting.69f0b09b20c737f14bc8.png",
     "static/media/heroBanner.png": "./static/media/heroBanner.224f50a7a076965b4980.png",
-    "static/media/writingSquare.png": "./static/media/writingSquare.05cb342a2563c00ff4c9.png",
+    "static/media/homeAboutUs.png": "./static/media/homeAboutUs.f870b3c1b6cafdecaf78.png",
+    "static/media/homeContact.png": "./static/media/homeContact.6f5f9735220eb2666b4f.png",
     "static/media/technologiesSideImg.png": "./static/media/technologiesSideImg.d80517a43f2b58da85a0.png",
+    "static/media/homeCareerCover.png": "./static/media/homeCareerCover.0beb8cd8c01ca118273e.png",
+    "static/media/homeCap.png": "./static/media/homeCap.fdea39caa95111ea9d9d.png",
     "static/media/incis.png": "./static/media/incis.7420b14dc9413ed6df59.png",
     "static/media/product-placeholder.png": "./static/media/product-placeholder.14aca1e16d0f1fe8af4b.png",
     "static/media/profile2.png": "./static/media/profile2.4e3c7d5c89f250529c65.png",
@@ -21,11 +23,11 @@
     "static/media/star-outline.svg": "./static/media/star-outline.6654fe1abf188029c0f9fa062f8a5a5e.svg",
     "index.html": "./index.html",
     "static/media/star.svg": "./static/media/star.d4de04266b098bd4ead90cd0c153fd98.svg",
-    "main.19301544.css.map": "./static/css/main.19301544.css.map",
-    "main.534f0811.js.map": "./static/js/main.534f0811.js.map"
+    "main.3ae4c02e.css.map": "./static/css/main.3ae4c02e.css.map",
+    "main.c10d0917.js.map": "./static/js/main.c10d0917.js.map"
   },
   "entrypoints": [
-    "static/css/main.19301544.css",
-    "static/js/main.534f0811.js"
+    "static/css/main.3ae4c02e.css",
+    "static/js/main.c10d0917.js"
   ]
 }
