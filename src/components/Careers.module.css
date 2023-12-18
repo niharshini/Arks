@@ -1,5 +1,4 @@
 .careerContainer {
-  padding-top: 100px;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -9,10 +8,19 @@
   background-size: cover;
   background-position: center;
 }
+.tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 60.71%); /* Adjust the alpha value to control the tint opacity */
+}
 
 .descriptionComponent{
   width: 50%;
   color: var(--white)!important;
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 796px){

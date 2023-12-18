@@ -1,6 +1,7 @@
 import styles from "./ContactUs.module.css";
 import ImageDescriptionHolder from "../root-components/image-description-holder";
 import {useEffect, useState} from "react";
+import homeContact from "../assets/home-assets/homeContact.png"
 import CarouselCommon from "../root-components/carousel-common";
 
 const ContactUs = () => {
@@ -29,7 +30,7 @@ const ContactUs = () => {
     return (
         <div className={styles.container}>
             {!isForMobile?<img className={styles.image}
-                  src="https://blog.hubspot.com/hs-fs/hubfs/business-plan-Mar-24-2023-06-45-32-8780-PM.jpg?width=1190&height=800&name=business-plan-Mar-24-2023-06-45-32-8780-PM.jpg"
+                  src={homeContact}
                   alt="Your Image"/>:<></>}
             <div className={styles.overlayDiv}>
                 {isForMobile?<img
