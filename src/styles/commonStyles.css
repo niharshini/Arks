@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .button {
     width: fit-content;
     margin-top: 50px;

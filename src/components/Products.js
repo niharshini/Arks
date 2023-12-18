@@ -2,26 +2,27 @@ import styles from "./Products.module.css";
 import ProductItem from "../root-components/product-item";
 import {NavLink} from "react-router-dom";
 import ImageDescriptionHolder from "../root-components/image-description-holder";
+import productImage from "../assets/common/product-placeholder.png"
 
 const Products = () => {
     const dummyItemConfig = [{
-        image: "./rectangle-961@2x.png",
+        image: productImage,
         title: 'Lorem Ipsum',
         description:
             'Lorem ipsum dolor sit amet, consectetur  elit.',
         to: "/home"
     }, {
-        image: 'https://placekitten.com/300/200',
+        image: productImage,
         title: 'Lorem Ipsum',
         description:
             'Lorem ipsum dolor sit amet, consectetur  elit.'
     }, {
-        image: "./rectangle-961@2x.png",
+        image: productImage,
         title: 'Lorem Ipsum',
         description:
             'Lorem ipsum dolor sit amet, consectetur  elit.'
     }, {
-        image: "./rectangle-961@2x.png",
+        image: productImage,
         title: 'Lorem Ipsum',
         description:
             'Lorem ipsum dolor sit amet, consectetur  elit.'

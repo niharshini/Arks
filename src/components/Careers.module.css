@@ -16,6 +16,11 @@
 }
 
 @media screen and (max-width: 796px){
+  .careerContainer {
+    min-height: 90vh;
+    padding-top: 20px;
+    margin-top: 80px;
+  }
   .descriptionComponent{
     width: fit-content;
   }

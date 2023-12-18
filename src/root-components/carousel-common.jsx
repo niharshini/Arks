@@ -3,8 +3,17 @@ import styles from "./root-styles/Carousel.module.css"
 import PropTypes from "prop-types";
 
 const CarouselCommon = ({ items, autoPlay, autoplayInterval, light = true, buttonPosition = "center" }) => {
+    const getWindowSize = () => {
+        if (window.innerWidth >= 1000) {
+            return 3; // Desktop
+        } else if (window.innerWidth >= 769) {
+            return 2; // Tablet
+        } else {
+            return 1; // Mobile
+        }
+    };
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [windowSize, setWindowSize] = useState(3);
+    const [windowSize, setWindowSize] = useState(getWindowSize());
 
     useEffect(() => {
         let intervalId;
@@ -49,15 +58,6 @@ const CarouselCommon = ({ items, autoPlay, autoplayInterval, light = true, butto
         return visibleItems;
     };
 
-    const getWindowSize = () => {
-        if (window.innerWidth >= 1000) {
-            return 3; // Desktop
-        } else if (window.innerWidth >= 769) {
-            return 2; // Tablet
-        } else {
-            return 1; // Mobile
-        }
-    };
 
     const shouldShowButtons = windowSize < items.length;
 

@@ -19,7 +19,7 @@ const Careers = () => {
                         "to": "/careers",
                         "title": "VIEW CAREERS"
                     }
-                }} color={"#ffffff"} secondaryColor={"#ffffff"}/>
+                }} color={"#ffffff"} secondaryColor={"#ffffff"} style={{marginLeft:"50px"}}/>
             </div>
         </div>
     );

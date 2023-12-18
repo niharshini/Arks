@@ -26,6 +26,7 @@
 
 @media (max-width: 796px) {
   .aboutUsContainer{
+    min-height: 80vh;
     flex-direction: column-reverse!important;
   }
   .containerImage{
