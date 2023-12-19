@@ -12,15 +12,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   min-height: 100vh;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.59), rgba(255, 255, 255, 0) 60.71%); /* Adjust the alpha value to control the tint opacity */
+  z-index: 1;
 }
 
 .descriptionComponent{
   width: 50%;
   color: var(--white)!important;
   padding: 20px 0;
+  z-index: 2;
 }
 
 @media screen and (max-width: 796px){

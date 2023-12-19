@@ -35,7 +35,6 @@
   line-height: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .buttonContainer {
@@ -53,13 +52,14 @@
 
 .buttonContainer:hover {
   border-radius: 10px;
-  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+  background: #f60;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: var(--padding-base) var(--padding-13xl);
   font-size: var(--font-size-base);
+  cursor: pointer;
   /* color: var(--white); */
 }
 

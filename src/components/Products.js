@@ -35,8 +35,8 @@ const Products = () => {
                 <div className={styles.descriptionComponent}>
                     <ImageDescriptionHolder description={{
                         "primary": {
-                            "question": `What are we?`,
-                            "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum r sit amet consectetur.",
+                            "question": `What have we done?`,
+                            "content": "Our product portfolio is a testament to our commitment to innovation, quality and reliability. Each product is crafted with precision and a keen understanding of our users' needs and requirements. Explore our products to find out more.",
                         }
                     }} color={"#ffffff"} style={{marginLeft: 0}}/>
                 </div>

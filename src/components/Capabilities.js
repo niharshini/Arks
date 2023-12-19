@@ -11,11 +11,10 @@ const Capabilities = ({reversed = false, content}) => {
   useEffect(() => {
       const defaultData = {
         "primary": {
-          "question": `What we can do?`,
-          "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum r sit amet consectetur.",
+          "question": `What Can We Do?`,
+          "content": "Design from concept to deployment, across technological domains meeting stringent mission critical requirments and more.",
         },
-        "secondary": "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
-            " sed Lorem ipsum dolor sit amet consectetur",
+        "secondary": "At ARKS, we pride ourselves on our diverse capabilities, wide technology bandwidth and the extended range of solutions we bring to our clients. From ultra low power to highly advanced, computationally intensive applications, we have managed to enhance our technological and prodcution capabilities over the years with continuous effort and vast experiences. Take a closer look at our key areas of expertise and capabilites.",
         "addLink": {
           "to": "/capabilities",
           "title":"View Capabilities"

@@ -10,10 +10,9 @@ const AboutUSHome = ({reversed = false, content, innerRef}) => {
         const defaultData = {
             "primary": {
                 "question": `What are we?`,
-                "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum r sit amet consectetur.",
+                "content": "An innovative Product development company, creating values and attaining global Benchmark.",
             },
-            "secondary": "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
-                " sed Lorem ipsum dolor sit amet consectetur",
+            "secondary": "A leading-edge electronic solutions provider, aimed to redefine the concept of design & developmentof quality products. Learn more about our journey, our values and things that sets us apart.",
             "addLink": {
                 "to": "about-us",
                 "title": "About Us"

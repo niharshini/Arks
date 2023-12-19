@@ -5,7 +5,7 @@ html{
     width: fit-content;
     margin-top: 50px;
     border-radius: var(--br-5xs);
-    background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
+    background: #f60;
     display: flex;
     flex-direction: row;
     align-items: center;

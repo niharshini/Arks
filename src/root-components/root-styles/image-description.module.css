@@ -3,7 +3,8 @@ span {
 }
 
 .holderContainer {
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-right: 80px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -32,18 +33,27 @@ span {
 }
 
 .descriptionQuestion {
-    font-size: var(--group-2-h6-size);
+    /* font-size: var(--group-2-h6-size);
     color: var(--orange);
     font-family: var(--font-montserrat);
-    gap: var(--gap-5xs)
+    gap: var(--gap-5xs) */
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--orange);
+    font-family: var(--font-montserrat);
+    font-variant: small-caps;
+    line-height: 24px;
+    letter-spacing: 1.4px;
 }
 
 .descriptionPrimary {
     font-family: var(--font-inter);
     font-size: 32px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 8px;
     color: var(--black-shade);
+    line-height: 48px;
+    letter-spacing: 0.06px;
 }
 
 .descriptionSecondary {
@@ -51,9 +61,11 @@ span {
     color: var(--color-gray-100);
     display: inline-block;
     font-family: var(--font-inter);
-    font-size: var(--font-size-5xl);
+    /* font-size: var(--font-size-5xl); */
+    font-size: 18px;
     font-weight: 500;
     line-height: 32px;
+    letter-spacing: 0.5px;
 }
 
 @media (max-width: 796px) {

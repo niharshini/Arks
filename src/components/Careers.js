@@ -10,11 +10,10 @@ const Careers = () => {
             <div className={styles.descriptionComponent}>
                 <ImageDescriptionHolder description={{
                     "primary": {
-                        "question": `What are we?`,
-                        "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum r sit amet consectetur.",
+                        "question": `Want to join us?`,
+                        "content": "Embark on a rewarding journey with ARKS.",
                     },
-                    "secondary": "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
-                        " sed Lorem ipsum dolor sit amet consectetur",
+                    "secondary": "As one of the few R&D centric companies in India, ARKS offers challenging and growth driven opportunities to build a fulfilling career. Find more about the carrers at ARKS, current openings and opportunites.",
                     "addLink": {
                         "to": "/careers",
                         "title": "VIEW CAREERS"

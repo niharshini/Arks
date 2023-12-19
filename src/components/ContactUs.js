@@ -38,8 +38,8 @@ const ContactUs = () => {
                     alt="Your Image" className={styles.imageMobile}/>:<></>}
                 <ImageDescriptionHolder description={{
                     "primary": {
-                        "question": `Enquire us`,
-                        "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum r sit amet consectetur.",
+                        "question": `How Can We Assist You?`,
+                        "content": "Reach out for enquiries, support or any kind of information.",
                     },
                     "secondary": "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
                         " sed Lorem ipsum dolor sit amet consectetur",
@@ -47,7 +47,7 @@ const ContactUs = () => {
                         "to": "/contact-us",
                         "title": "CONTACT US"
                     }
-                }} style={isWindowBelowThreshold ? {} : {marginLeft: 0}} />
+                }} style={isWindowBelowThreshold ? {} : {marginLeft: 0, marginTop: "2.5rem"}} />
             </div>
         </div>
     );
