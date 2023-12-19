@@ -10,14 +10,14 @@ import Footer from "../components/Footer";
 import {useRef, useState} from "react";
 
 const HomeRevised2 = () => {
-    const aboutUsHomeRef = useRef(null);
-    const handleButtonClick = () => {
-        aboutUsHomeRef?.current?.scrollIntoView({behavior: 'smooth'});
-    };
+    const innerRef = useRef(null)
+    const scrollHandler = () =>{
+        innerRef?.current?.scrollIntoView({"behavior": "smooth"})
+    }
     return (
         <div className={styles.homeRevised2}>
-            <HeroSection onButtonClick={handleButtonClick}/>
-            <AboutUSHome ref={aboutUsHomeRef}/>
+            <HeroSection onButtonClick = {scrollHandler}/>
+            <AboutUSHome innerRef={innerRef}/>
             <Products/>
             <Capabilities reversed={true}/>
             <Careers/>

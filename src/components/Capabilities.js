@@ -1,6 +1,6 @@
 import styles from "../styles/ImageDescriptionStyle.module.css";
 import ImageDescriptionHolder from "../root-components/image-description-holder";
-import tableWritingImage from "../assets/home-assets/tableWriting.png"
+import tableWritingImage from "../assets/home-assets/homeCap.png"
 import { useEffect, useState } from "react";
 
 

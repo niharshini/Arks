@@ -4,6 +4,8 @@
 body {
   margin: 0;
   line-height: normal;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 :root {
   /* fonts */

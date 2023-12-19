@@ -1,7 +1,8 @@
 import styles from "./HeroSection.module.css";
 import banner from "../assets/home_banner.gif"
 import CarouselCommon from "../root-components/carousel-common";
-const HeroSection = ({ onButtonClick }) => {
+import {Link} from "react-router-dom";
+const HeroSection = ({onButtonClick}) => {
 
     return (
         <div className={styles.heroSection}>

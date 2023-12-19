@@ -1,5 +1,5 @@
 import styles from "./Careers.module.css";
-import casualMeeting from "../assets/common/businesspeoplecasualmeeting-1@2x.png"
+import casualMeeting from "../assets/home-assets/homeCareerCover.png"
 import ImageDescriptionHolder from "../root-components/image-description-holder";
 
 const Careers = () => {

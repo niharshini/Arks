@@ -1,9 +1,9 @@
 import styles from "../styles/ImageDescriptionStyle.module.css";
 import ImageDescriptionHolder from "../root-components/image-description-holder";
-import writingImage from "../assets/common/writingSquare.png"
+import writingImage from "../assets/home-assets/homeAboutUs.png"
 import {useEffect, useRef, useState} from "react";
 
-const AboutUSHome = ({reversed = false, content}) => {
+const AboutUSHome = ({reversed = false, content, innerRef}) => {
     const [description, setDescription] = useState(content);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ const AboutUSHome = ({reversed = false, content}) => {
         }
     }, []);
 
-    return (<div className={`${styles.aboutUsContainer} ${reversed ? styles.reversed : ""}`} id={"aboutComponent"}>
+    return (<div className={`${styles.aboutUsContainer} ${reversed ? styles.reversed : ""}`} id={"aboutUs"} ref={innerRef}>
         <ImageDescriptionHolder description={description} style={{marginLeft:"50px"}}/>
         <img
             className={!reversed ? styles.containerImage : styles.containerImageReverse}
