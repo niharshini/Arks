@@ -1,5 +1,6 @@
 import styles from "./HeroSection.module.css";
-import banner from "../assets/home_banner.gif"
+// import banner from "../assets/home_banner.gif";
+import banner from "../assets/banner.png";
 import CarouselCommon from "../root-components/carousel-common";
 import {Link} from "react-router-dom";
 const HeroSection = ({onButtonClick}) => {

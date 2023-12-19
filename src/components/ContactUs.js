@@ -41,8 +41,6 @@ const ContactUs = () => {
                         "question": `How Can We Assist You?`,
                         "content": "Reach out for enquiries, support or any kind of information.",
                     },
-                    "secondary": "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
-                        " sed Lorem ipsum dolor sit amet consectetur",
                     "addLink": {
                         "to": "/contact-us",
                         "title": "CONTACT US"

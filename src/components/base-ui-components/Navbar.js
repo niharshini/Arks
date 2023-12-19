@@ -9,7 +9,7 @@ const Navbar = () => {
     const menuClick = useRef(null)
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 150) {
+            if (window.scrollY > 0) {
                 setSticky(true);
             } else {
                 setSticky(false);
@@ -70,7 +70,7 @@ const Navbar = () => {
     }
 
     return (
-        <div ref={menuClick} className={`${styles.mainContainer}`}>
+        <div ref={menuClick} className={`${styles.mainContainer} ${isSticky?styles.sticky: ""}`}>
             <div className={styles.navContent}>
                 <div className={styles.logoContainer}>
                     <img className={styles.brandLogo} alt="" src={logo}/>
