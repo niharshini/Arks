@@ -1,12 +1,12 @@
 .testimonalsParent {
   background-image: url("../assets/common/testimonials.png");
   background-size: cover; 
-  min-height: 120vh;
+  min-height: 100vh;
 }
 
 .layer {
   background: rgba(27, 27, 27, 0.80);
-  min-height: 120vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }

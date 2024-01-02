@@ -4,9 +4,26 @@ import tableWritingImage from "../assets/home-assets/homeCap.png"
 import { useEffect, useState } from "react";
 
 
-const Capabilities = ({reversed = false, content}) => {
+const Capabilities = ({reversed = false, content, image, containerWidth}) => {
 
   const [description, setDescription] = useState(content);
+  const [width, setWidth] = useState(containerWidth);
+    const getWindowSize = () => {
+        if (window.innerWidth <= 768) {
+            return 90; // Desktop
+        } else return containerWidth
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(getWindowSize());
+        };
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [width]);
 
   useEffect(() => {
       const defaultData = {
@@ -26,11 +43,11 @@ const Capabilities = ({reversed = false, content}) => {
   },[]);
 
   return (<div className={`${styles.aboutUsContainer} ${reversed?styles.reversed:""}`}>
-    <ImageDescriptionHolder description={description}/>
+    <ImageDescriptionHolder description={description} style={{width: `${width}%`}}/>
     <img
         className={!reversed?styles.containerImage:styles.containerImageReverse}
         alt=""
-        src={tableWritingImage}
+        src={image?image:tableWritingImage}
     />
   </div>);
 };

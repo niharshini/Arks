@@ -31,7 +31,7 @@ const Footer = () => {
             <div className={styles.column1}>
                 <NavLink to={"/capabilities"} className={styles.capabilities}>Capabilities</NavLink>
                 <NavLink to={"/careers"} className={styles.capabilities}>Careers</NavLink>
-                <NavLink to={"/about-us"} className={styles.capabilities}>About Us</NavLink>
+                <NavLink to={"/company"} className={styles.capabilities}>Company</NavLink>
                 <NavLink to={"/contact-us"} className={styles.capabilities}>Enquiry</NavLink>
             </div>
 

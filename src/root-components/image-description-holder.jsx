@@ -16,6 +16,12 @@ export default function ImageDescriptionHolder({description, color, secondaryCol
                     {description["secondary"]}
                 </span>
                 </div>) : <></>}
+                {description["secondaryMulti"] ? (<div>
+                    {description["secondaryMulti"].map(desc => <span className={styles.descriptionSecondaryMulti}
+                                                                     style={{color: secondaryColor, ...secondaryFontStyles}}>
+                    <i className="fas fa-arrow-right"></i> {desc}
+                </span>)}
+                </div>) : <></>}
                 {
                     description["addLink"] ? <div className={styles.buttonContainer}>
                         <div className={"button"}>

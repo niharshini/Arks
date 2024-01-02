@@ -3,7 +3,7 @@ import ImageDescriptionHolder from "../root-components/image-description-holder"
 import writingImage from "../assets/home-assets/homeAboutUs.png"
 import {useEffect, useRef, useState} from "react";
 
-const AboutUSHome = ({reversed = false, content, innerRef}) => {
+const AboutUSHome = ({reversed = false, content, innerRef, image, containerWidth}) => {
     const [description, setDescription] = useState(content);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const AboutUSHome = ({reversed = false, content, innerRef}) => {
             },
             "secondary": "A leading-edge electronic solutions provider, aimed to redefine the concept of design & developmentof quality products. Learn more about our journey, our values and things that sets us apart.",
             "addLink": {
-                "to": "about-us",
+                "to": "company",
                 "title": "About Us"
             }
         };
@@ -24,11 +24,11 @@ const AboutUSHome = ({reversed = false, content, innerRef}) => {
     }, []);
 
     return (<div className={`${styles.aboutUsContainer} ${reversed ? styles.reversed : ""}`} id={"aboutUs"} ref={innerRef}>
-        <ImageDescriptionHolder description={description} style={{marginLeft:"50px"}}/>
+        <ImageDescriptionHolder description={description} style={{marginLeft:"50px", width:containerWidth}}/>
         <img
             className={!reversed ? styles.containerImage : styles.containerImageReverse}
             alt=""
-            src={writingImage}
+            src={image?image:writingImage}
         />
     </div>);
 };

@@ -4,13 +4,14 @@ export default function SectionHead({
                                         color = "#fff",
                                         secondaryColor = "#fff",
                                         title= "Lorem Ipsum",
-                                        primaryText ="Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum",
-                                        secondaryText
+                                        primaryText,
+                                        secondaryText,
+    useSecondarySize = false
                                     }) {
     return (
         <div className={styles.sectionContainer}>
             {title ? <span className={styles.sectionTitle}>{title}</span> : <></>}
-            {primaryText ? <span className={styles.descriptionPrimary}
+            {primaryText ? <span className={`${!useSecondarySize?styles.descriptionPrimary:styles.descriptionSecondary}`}
                                  style={{color: color}}>{primaryText}</span> : <></>}
             {secondaryText ? <span className={styles.descriptionSecondary} style={{color: secondaryColor}}>
                     {secondaryText}

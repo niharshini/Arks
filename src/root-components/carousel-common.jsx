@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from "./root-styles/Carousel.module.css"
 import PropTypes from "prop-types";
 
-const CarouselCommon = ({ items, autoPlay, autoplayInterval, light = true, buttonPosition = "center" }) => {
+const CarouselCommon = ({ items, autoPlay, autoplayInterval, light = true, buttonPosition = "center", numberOfItems, showButtons = true}) => {
     const getWindowSize = () => {
         if (window.innerWidth >= 1000) {
             return 3; // Desktop
@@ -13,13 +13,13 @@ const CarouselCommon = ({ items, autoPlay, autoplayInterval, light = true, butto
         }
     };
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [windowSize, setWindowSize] = useState(getWindowSize());
+    const [windowSize, setWindowSize] = useState(numberOfItems?numberOfItems:getWindowSize());
 
     useEffect(() => {
         let intervalId;
 
         const handleResize = () => {
-            setWindowSize(getWindowSize());
+            setWindowSize(numberOfItems?numberOfItems:getWindowSize());
         };
 
         window.addEventListener('resize', handleResize);
@@ -59,7 +59,7 @@ const CarouselCommon = ({ items, autoPlay, autoplayInterval, light = true, butto
     };
 
 
-    const shouldShowButtons = windowSize < items.length;
+    const shouldShowButtons = windowSize < items.length && showButtons;
 
     return (
         <div style={{ position: 'relative', width: '100%' }}>

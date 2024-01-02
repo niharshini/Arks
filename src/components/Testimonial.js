@@ -26,17 +26,17 @@ const Testimonial = ({
   return (
     <div className={styles.testimonialParent}>
       <div className={styles.testimonialText}>{testimonialText}</div>
-      <div className={styles.rating}>
-        {
-          getStarsByRating() 
-        }
-      </div>
+      {/*<div className={styles.rating}>*/}
+      {/*  {*/}
+      {/*    getStarsByRating() */}
+      {/*  }*/}
+      {/*</div>*/}
       <div className={styles.profile}>
-        <img className={styles.frameChild} alt="" src={profilePic} />
+        {/*<img className={styles.frameChild} alt="" src={profilePic} />*/}
         <div className={styles.janeSmith}>{profileName}</div>
-        <div className={styles.freelanceDesigner}>
-          {profileDesc}
-        </div>
+        {/*<div className={styles.freelanceDesigner}>*/}
+        {/*  {profileDesc}*/}
+        {/*</div>*/}
       </div>
     </div>
   );

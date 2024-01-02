@@ -11,29 +11,21 @@ const ClientTestimonals = () => {
   const dummyItemConfig = [
     {
       testimonialText: "“I've been using this web hosting service for over a year and I'm really impressed with the uptime and support. The website has never gone down and the customer service is always quick to help with any issues I have. Highly recommend!”",
-      rating: "5",
-      profilePic: profile1,
       profileName: "Jane Smith",
       profileDesc: "Freelance Designer"
     },
     {
       testimonialText: "“I've been using this web hosting service for a few months now and overall it's been fine. The uptime has been good and I haven't had any major issues. The pricing is also reasonable. Nothing particularly stands out as exceptional, but it gets the job done.”",
-      rating: "3",
-      profilePic: profile2,
       profileName: "Tom Williams",
       profileDesc: "Software Developer"
     },
     {
       testimonialText: "“I've been using this web hosting service for over a year and I'm really impressed with the uptime and support. The website has never gone down and the customer service is always quick to help with any issues I have. Highly recommend!”",
-      rating: "4",
-      profilePic: profile1,
       profileName: "Meenakshi Singh",
       profileDesc: "Accountant"
     },
     {
       testimonialText: "“I've been using this web hosting service for a few months and it's been nothing but problems. My website has gone down multiple times and the customer service has been unresponsive. I would not recommend this company.”",
-      rating: "1",
-      profilePic: profile3,
       profileName: "Michael Brown",
       profileDesc: "Online Entrepreneur"
     }
@@ -47,7 +39,6 @@ const ClientTestimonals = () => {
             <SectionHead
                 title={"Testimonals"}
                 primaryText={"What Our Customers Say"}
-                secondaryText={"Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit, sed Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur elit, sed"}
             />
           </div>
         </div>
