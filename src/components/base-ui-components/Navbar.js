@@ -45,7 +45,6 @@ const Navbar = () => {
         {to: '/home', title: 'Home', "default": true},
         {to: '/capabilities', title: 'Capabilities', "default": false},
         {to: '/products', title: 'Products', "default": false},
-        {to: '/services', title: 'Services', "default": false},
         {to: '/company', title: 'Company', "default": false},
         {to: '/careers', title: 'Careers', "default": false},
         {to: '/community', title: 'Community', "default": false},

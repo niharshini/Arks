@@ -11,7 +11,7 @@ const Capabilities = ({reversed = false, content, image, containerWidth}) => {
     const getWindowSize = () => {
         if (window.innerWidth <= 768) {
             return 90; // Desktop
-        } else return containerWidth
+        } else return 40
     };
 
     useEffect(() => {
@@ -40,6 +40,7 @@ const Capabilities = ({reversed = false, content, image, containerWidth}) => {
       if (!description) {
           setDescription(defaultData);
       }
+      setWidth(getWindowSize());
   },[]);
 
   return (<div className={`${styles.aboutUsContainer} ${reversed?styles.reversed:""}`}>

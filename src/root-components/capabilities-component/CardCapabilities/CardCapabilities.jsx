@@ -16,7 +16,8 @@ export const CardCapabilities = ({
                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                                      image,
                                      color = "#fff",
-                                     colorSecondary = "#fff"
+                                     colorSecondary = "#fff",
+                                     link = "/"
                                  }) => {
     const [state, dispatch] = useReducer(reducer, {
         property1: property1 || "default"

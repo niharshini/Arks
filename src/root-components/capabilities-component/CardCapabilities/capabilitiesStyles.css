@@ -45,11 +45,9 @@
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 0.05px;
-  line-height: 48px;
   margin-top: -1px;
   position: relative;
-  white-space: nowrap;
-  width: fit-content;
+  word-wrap: break-word;
 }
 
 .card-capabilities .p {

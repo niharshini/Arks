@@ -66,6 +66,7 @@ const AboutUsRevised3 = () => {
                     color={"#3D3C3CC6"}
                     secondaryColor={"#3D3C3CC6"}
                     useSecondarySize={true}
+                    marginBottom={"70px"}
                 />
             </div>
             <AboutUSHome content={aboutUsContent} image={mission}/>

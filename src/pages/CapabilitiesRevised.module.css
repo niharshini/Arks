@@ -4,3 +4,42 @@
     width: 100vw;
     height: 100vh;
 }
+
+.aboutUsHero{
+    position: relative;
+    background-color: var(--white);
+    width: 100%;
+    height: fit-content;
+}
+
+.image {
+    position: relative;
+    background-color: var(--white);
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.holderContainer {
+    padding-top: 80px;
+    margin-left: 50px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.holderContainer .descriptionPrimary{
+    font-size: var(--font-size-5xl) !important;
+}
+
+@media (max-width: 796px) {
+    .holderContainer{
+        padding-top: 50px;
+        margin: 50px 20px 20px;
+    }
+    .holderContainer .descriptionPrimary{
+        font-size: var(--font-size-lg) !important;
+    }
+}

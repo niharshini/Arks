@@ -6,11 +6,10 @@ const QualityControl = ({reversed = false}) => {
   return (<div className={`${styles.aboutUsContainer} ${reversed?styles.reversed:""}`}>
     <ImageDescriptionHolder description={{
       "primary": {
-        "question": `Quality Control`,
-        "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum r sit amet consectetur.",
+        "question": `Effective Technology Integration`,
+        "content": "Efficient and Effective applications design requires standard technologies.",
       },
-      "secondary": "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
-          " sed Lorem ipsum dolor sit amet consectetur",
+      "secondary": "We excel in integrating advanced technologies to create cutting-edge solutions. Our commitment to staying ahead of the technological curve ensures that our offerings are at the forefront of innovation.",
     }}/>
     <img
         className={!reversed?styles.containerImage:styles.containerImageReverse}

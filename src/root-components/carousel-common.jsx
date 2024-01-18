@@ -96,7 +96,7 @@ const CarouselCommon = ({ items, autoPlay, autoplayInterval, light = true, butto
                         }}
                         onClick={prevItem}
                     >
-                        &lt;
+                        <i className="fas fa-arrow-left"></i>
                     </button>
                     <button
                         className={styles.button}
@@ -107,7 +107,7 @@ const CarouselCommon = ({ items, autoPlay, autoplayInterval, light = true, butto
                         }}
                         onClick={nextItem}
                     >
-                        &gt;
+                        <i className="fas fa-arrow-right"></i>
                     </button>
                 </div>
             )}

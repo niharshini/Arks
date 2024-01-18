@@ -6,10 +6,11 @@ export default function SectionHead({
                                         title= "Lorem Ipsum",
                                         primaryText,
                                         secondaryText,
-    useSecondarySize = false
+    useSecondarySize = false,
+    marginBottom
                                     }) {
     return (
-        <div className={styles.sectionContainer}>
+        <div className={styles.sectionContainer} style={{marginBottom: marginBottom}}>
             {title ? <span className={styles.sectionTitle}>{title}</span> : <></>}
             {primaryText ? <span className={`${!useSecondarySize?styles.descriptionPrimary:styles.descriptionSecondary}`}
                                  style={{color: color}}>{primaryText}</span> : <></>}
