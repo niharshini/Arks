@@ -58,4 +58,25 @@
         justify-content: center;
 
     }
+
+
+}.productItems2{
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+
+}
+@media screen and (max-width: 912px) {
+    .productItems2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        height: fit-content;
+
+    }
 }

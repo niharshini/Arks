@@ -5,6 +5,7 @@
   height: 440px;
   width: 450px;
   display: flex;
+  margin-top: 20px; /* Added margin to the top */
 }
 
 .card-capabilities .overlap-group {
@@ -85,13 +86,15 @@
   top: 150px;
 }
 
+
 /* Media queries for different breakpoints */
 
-@media screen and (max-width: 1261px) {
+@media screen and (max-width: 1399px) {
   .card-capabilities {
     height: 440px;
     width: 350px;
-    margin: 0 auto; /* Center the card */
+    margin: 20px; /* Center the card */
+    margin-top: 20px; /* Added margin to the top */
   }
 
   .card-capabilities .group {
@@ -116,11 +119,12 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1193px) {
   .card-capabilities {
     height: 400px;
     width: 300px;
     margin: 0 auto; /* Center the card */
+    margin-top: 20px; /* Added margin to the top */
   }
 
   .card-capabilities .group {
@@ -133,7 +137,6 @@
 
   .card-capabilities .div {
     line-height: 28px;
-
     font-size: 20px;
   }
 
@@ -141,9 +144,11 @@
     font-size: 16px;
     line-height: 20px;
   }
+
   .card-capabilities .property-1-1-variant-2 {
     top: 188px;
   }
+
   .card-capabilities .button-instance {
     bottom: 40px;
     margin-left: 15px;

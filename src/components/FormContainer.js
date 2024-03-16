@@ -1,9 +1,12 @@
 import Property1Default from "./Property1Default";
+import prodStyles from "./ProductsContainer.module.css"
+
 import styles from "./FormContainer.module.css";
 import {CardCapabilities} from "../root-components/capabilities-component/CardCapabilities";
 import CarouselCommon from "../root-components/carousel-common";
 import SectionHead from "../root-components/section-head";
 import productImage from "../assets/common/product-placeholder.png"
+import {useEffect, useState} from "react";
 
 const FormContainer = () => {
     const dummyItemConfig = [
@@ -70,6 +73,48 @@ const FormContainer = () => {
         }
     ]
 
+    const [displayCount, setDisplayCount] = useState(3); // Initial number of items to display
+    const [showAll, setShowAll] = useState(false); // State to toggle showing all items
+
+    useEffect(() => {
+        const handleResize = () => {
+            // Adjust the display count based on screen width
+            if (window.innerWidth < 680) {
+                setDisplayCount(1);
+            } else if (window.innerWidth < 1000) {
+                setDisplayCount(2);
+            } else {
+                setDisplayCount(3);
+            }
+        };
+
+        // Call handleResize on initial mount
+        handleResize();
+
+        // Event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    useEffect(() => {
+
+    }, [showAll])
+
+    const handleShowMore = () => {
+        // Show all items
+        setShowAll(true);
+    };
+
+    const handleShowLess = () => {
+        // Show limited number of items based on display count
+        setShowAll(false);
+    };
+
+    // Calculate number of rows based on display count
+    const numRows = Math.ceil(dummyItemConfig.length / displayCount);
+
     return (
         <div className={styles.containerParent}>
             <div style={{width: "90%", justifyContent: "center", display: "flex"}}>
@@ -77,11 +122,31 @@ const FormContainer = () => {
                     title={"Our Products"}
                 />
             </div>
-
-            <CarouselCommon items={dummyItemConfig.map((item, index) =>
-                <CardCapabilities property1={"default"} title={item.title} description={item.brief}
-                                  image={item.image} key={index} link={item.link}/>
-            )} autoPlay={false} autoplayInterval={2500} buttonPosition={"center"}/>
+            <div className={prodStyles.productItems2}>
+                {[...Array(showAll ? numRows : 1)].map((_, rowIndex) => (
+                    <div key={rowIndex} className={prodStyles.productItems2} style={{marginBottom: "70px"}}>
+                        {dummyItemConfig.slice(rowIndex * displayCount, (rowIndex + 1) * displayCount).map((item, index) => (
+                            <CardCapabilities
+                                property1={"default"}
+                                title={item.title}
+                                description={item.brief}
+                                image={item.image}
+                                key={index}
+                                link={item.link}
+                            />
+                        ))}
+                    </div>
+                ))}
+            </div>
+            <div className={styles.buttonContainer}>
+                {!showAll ? (
+                    <span onClick={handleShowMore}
+                          style={{textDecoration: "underline", color: "#fff", fontSize: "20px"}}>Show More</span>
+                ) : (
+                    <span onClick={handleShowLess}
+                          style={{textDecoration: "underline", color: "#fff", fontSize: "20px"}}>Show Less</span>
+                )}
+            </div>
         </div>
     );
 };
