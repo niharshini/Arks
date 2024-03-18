@@ -1,0 +1,39 @@
+.parentComponent {
+    padding: 40px 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: brightness(60%); */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-family: var(--font-inter);
+    line-height: 56px;
+}
+
+.info {
+    color: white;
+    font-size: 20px;
+    font-family: var(--font-inter);
+    line-height: 30px;
+    width: 800px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-top: 80px;
+}

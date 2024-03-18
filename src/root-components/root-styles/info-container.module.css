@@ -1,0 +1,39 @@
+.parentContainer {
+    /* height: 80vh; */
+}
+
+.infoContainer {
+    margin: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.header {
+    font-size: var(--group-2-h6-size);
+    color: var(--orange);
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header::first-letter {
+    font-size: 30px;
+}
+
+.info {
+    /* padding-right: 300px; */
+    width: 600px;
+    margin-top: 40px;
+
+    font-size: 20px;
+    font-family: var(--font-inter);
+    line-height: 32px;
+    letter-spacing: 0.15%;
+}

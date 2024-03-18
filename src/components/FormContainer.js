@@ -141,10 +141,10 @@ const FormContainer = () => {
             <div className={styles.buttonContainer}>
                 {!showAll ? (
                     <span onClick={handleShowMore}
-                          style={{textDecoration: "underline", color: "#fff", fontSize: "20px"}}>Show More</span>
+                          style={{textDecoration: "underline", color: "#fff", fontSize: "20px", cursor: "pointer"}}>Show More</span>
                 ) : (
                     <span onClick={handleShowLess}
-                          style={{textDecoration: "underline", color: "#fff", fontSize: "20px"}}>Show Less</span>
+                          style={{textDecoration: "underline", color: "#fff", fontSize: "20px", cursor: "pointer"}}>Show Less</span>
                 )}
             </div>
         </div>
