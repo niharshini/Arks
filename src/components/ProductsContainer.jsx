@@ -2,59 +2,18 @@ import styles from "./ProductsContainer.module.css"
 import SectionHead from "../root-components/section-head";
 import {useEffect, useState} from "react";
 import ConsumerCard from "../root-components/consumerCard";
-import productImage from "../assets/common/product-placeholder.png"
+import productImage from "../assets/common/product-placeholder.png";
+import { Modal } from "react-responsive-modal";
+import {products} from "../productsInfo";
+import "react-responsive-modal/styles.css";
+import { NavLink } from "react-router-dom";
 
 export default function ProductsContainer() {
     const [displayItems, setDisplayItems] = useState([])
-    const [keyMap, setKeyMap] = useState([])
-    const products = [
-        {
-            "type": "defense",
-            "typeTitle": "Defense",
-            "productName": "Defense Prod 1",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }, {
-            "type": "defense",
-            "typeTitle": "Defense",
-            "productName": "Defense Prod 2",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }, {
-            "type": "defense",
-            "typeTitle": "Defense",
-            "productName": "Defense Prod 3",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }, {
-            "type": "application-boards",
-            "typeTitle": "Application Boards",
-            "productName": "Application Prod 1",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }, {
-            "type": "application-boards",
-            "typeTitle": "Application Boards",
-            "productName": "Application Prod 2",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }, {
-            "type": "application-boards",
-            "typeTitle": "Application Boards",
-            "productName": "Application Prod 3",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }, {
-            "type": "industrial",
-            "typeTitle": "Industrial",
-            "productName": "Industrial Prod 2",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }, {
-            "type": "industrial",
-            "typeTitle": "Industrial",
-            "productName": "Industrial Prod 1",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }, {
-            "type": "industrial",
-            "typeTitle": "Industrial",
-            "productName": "Industrial Prod 3",
-            "description": "Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy, Lorem Ipsum. dummy."
-        }
-    ]
+    const [keyMap, setKeyMap] = useState([]);
+    const [showModal, setShowModal] = useState(true);
+    const [selectedProduct, setSelectedProduct] = useState();
+   
 
     useEffect(() => {
         setDisplayItems(products)
@@ -69,13 +28,13 @@ export default function ProductsContainer() {
     }, []);
     return (
         <div className={styles.productsContainer}>
-            <div className={styles.productsTitle}>
+            {/* <div className={styles.productsTitle}>
                 <SectionHead
                     title={"Our Products"}
                     primaryText={"Lorem ipsum dolor sit amet consectetur adipiscing "}
                     color={"#000"}
                 />
-            </div>
+            </div> */}
             <div>
                 <span className={styles.tabTitle} onClick={
                     () => {
@@ -104,13 +63,41 @@ export default function ProductsContainer() {
                     displayItems.map(
                         (item, index)=> <ConsumerCard
                             image={productImage}
-                            title={item.productName} description={item.description} to={"/contact-us"} key={index}/>
+                            title={item.productName} 
+                            description={item.description} 
+                            detailDescription={item.detailDescription}
+                            to={"/contact-us"} 
+                            key={index}
+                            setSelectedProduct={setSelectedProduct}
+                            />
                     )
                 }
             </div>
             <div>
 
             </div>
+
+            <Modal open={selectedProduct} onClose={() => setSelectedProduct(false)}>
+                <h2 className={styles.modalTitle}>{selectedProduct?.title}</h2>
+                <img
+                    src={selectedProduct?.image}
+                    alt="product image" style={{width: "100%", height: "280px", borderRadius:"10px 10px 0 0"}}
+                />
+                <p className={styles.modalDesc}>
+                    {selectedProduct?.description}
+                </p>
+                <div className={styles.buttonContainer}> 
+                    <div className={styles.button} style={{marginTop: "20px"}}>
+                        <NavLink to={"/contact-us"}>
+                            Contact Us<i className="fas fa-arrow-right" style={{marginLeft: "10px"}}></i>
+                        </NavLink>
+                    </div>
+                </div>
+
+                
+
+                
+            </Modal>
         </div>
     )
 }
