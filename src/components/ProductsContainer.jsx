@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import ConsumerCard from "../root-components/consumerCard";
 import productImage from "../assets/common/product-placeholder.png";
 import { Modal } from "react-responsive-modal";
-import {products} from "../productsInfo";
+import {products} from "../productsInfo.js";
 import "react-responsive-modal/styles.css";
 import { NavLink } from "react-router-dom";
 

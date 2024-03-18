@@ -61,7 +61,8 @@
 
 
 }.productItems2{
-    width: 98%;
+    margin-left: 10px;
+    width: 97%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
