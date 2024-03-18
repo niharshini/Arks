@@ -14,7 +14,7 @@ const FormContainer = () => {
             "title": "Microcontrollers / Microprocessors",
             "brief": "Microcontroller / Microprocessor based SBC product design using 8bit, 16bit, and 32bit.",
             "image": productImage,
-            "link": "/home"
+            "link": "/contact-us"
         },
         {
             "title": "CPLD / FPGA",

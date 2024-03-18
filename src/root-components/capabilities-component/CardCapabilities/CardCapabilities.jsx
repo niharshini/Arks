@@ -17,7 +17,7 @@ export const CardCapabilities = ({
                                      image,
                                      color = "#fff",
                                      colorSecondary = "#fff",
-                                     link = "/"
+                                     link = "/contact-us"
                                  }) => {
     const [state, dispatch] = useReducer(reducer, {
         property1: property1 || "default"
@@ -53,6 +53,7 @@ export const CardCapabilities = ({
                     exploreClassName="instance-node"
                     property1="variant-5"
                     text="KNOW MORE"
+                    link={link}
                 />
             </div>
         </div>
