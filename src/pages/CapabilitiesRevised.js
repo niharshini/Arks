@@ -11,6 +11,8 @@ import InfoContainer from "../root-components/InfoContainer";
 import placeHolderImg from "../assets/placeholder_img1.png";
 import placeHolderImg2 from "../assets/placeholder_2.png";
 import BackgroundFocusComponent from "../root-components/BackgroundFocusComponent";
+import CardComponent2 from "../root-components/CardComponent2";
+import PartnerWithUsComponent from "../root-components/PartnerWithUsComponent";
 
 const CapabilitiesRevised = () => {
 
@@ -21,6 +23,15 @@ const CapabilitiesRevised = () => {
         {title : "Lorem Ipsum", info: "Production capacity for both high and low volume production cycles."},
         {title : "Lorem Ipsum", info: "Workmanship qualifies for assembling products that are to be certified by MIL Standards like MIL-STD-810, MIL-STD-461 etc."},
         {title : "Lorem Ipsum", info: "In house PCB assembly and integration facilities."}
+    ]
+
+    const qualityAssuranceCards = [
+        {title: "MIL-HDBK-454", info: "General Guidelines for Electronic Equipment"},
+        {title: "IPC-A-610", info: "Acceptability of Electronic Assemblies"},
+        {title: "MIL-STD-810E/F/G", info: "Environmental test methods and engineering guidelines"},
+        {title: "JSS 55555", info: "Environmental test methods for electronics and electrical equipments"},
+        {title: "MIL-STD-461", info: "Specification for EMI/EMC testing"},        
+        {title: "MIL-STD-498 & IEEE Standards ", info: "Documentation standards"},
     ]
 
     return (
@@ -43,13 +54,13 @@ const CapabilitiesRevised = () => {
             {/* <QualityControl reversed={true}/> */}
             <InfoContainer 
                 headers = {["Effective Technology", "Integration"]}
-                info = {"Efficient and Effective applications design requires standard technologies. We excel in integrating advanced technologies to create cutting-edge solutions. Our commitment to staying ahead of the technological curve ensures that our offerings are at the forefront of innovation."} 
+                info = {["Efficient and Effective applications design requires standard technologies. We excel in integrating advanced technologies to create cutting-edge solutions. Our commitment to staying ahead of the technological curve ensures that our offerings are at the forefront of innovation."]} 
                 image = {placeHolderImg}
             />
             <FormContainer/>
             <InfoContainer 
                 headers = {["R&D Excellence and", "Cross-Domain Expertise"]}
-                info = {"Our dedication to research and development has been proved time and again by the success rate of our solutions even to complex engineering challenges. Our capacity to research has made us stand as one of the few truly R&D centric companies in the region. Also our team brings together cross-domain expertise, combining skills from various disciplines. This diversity allows us to approach challenges with a comprehensive understanding, providing holistic solutions."} 
+                info = {["Our dedication to research and development has been proved time and again by the success rate of our solutions even to complex engineering challenges. Our capacity to research has made us stand as one of the few truly R&D centric companies in the region. Also our team brings together cross-domain expertise, combining skills from various disciplines. This diversity allows us to approach challenges with a comprehensive understanding, providing holistic solutions."]} 
                 image = {placeHolderImg2}
                 reverse = {true}
             />
@@ -58,6 +69,21 @@ const CapabilitiesRevised = () => {
                 info = {"Production team at ARKS  is a highly experienced and skilled team for assembly and production having been worked for a number of defence projects. The quality of workmanship will be of the highest level thereby reducing the chances of rework and saving valuable time."}
                 cardsInfo = {cardsInfo}
             />
+            <InfoContainer 
+                headers = {["Quality Assurance"]}
+                info = {["Continuous improvement and effective quality processes have been the prominent strengths of the company progress over the years. Strict adherence to the quality norms is the key to the high quality standards at ARKS MicroElectronics.", "Our products are designed to withstand extreme environmental conditions like temperature, shock, vibration, Corrosive environment and EMI/EMC, according to the application requirements."]} 
+                image = {placeHolderImg}
+            />
+            <div className={styles.qualityAssuranceCardsContainer}>
+                <div className={styles.qualityAssuranceCards}>
+                {
+                    qualityAssuranceCards?.map(cardInfo => <CardComponent2 title={cardInfo.title} info ={cardInfo.info} />)
+                }
+                </div>
+            </div>
+
+            <PartnerWithUsComponent />
+           
             <Footer/>
         </div>
     );

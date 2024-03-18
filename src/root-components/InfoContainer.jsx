@@ -14,13 +14,19 @@ function InfoContainer ({ headers, info, image, reverse = false}) {
                     </div>
                 }
                 <div className={styles.textSection}>
-                    {headers && headers.length > 1 && 
+                    {headers && headers.length > 0 && 
                         <div className={styles.headers}>
                             {headers.map(headerText => <div className={styles.header}>{headerText}</div>)}
                         </div>
                     }
+
+                    {info && info.length > 0 && 
+                        <div className={styles.infos}>
+                            {info.map(text => <div className={styles.info}>{text}</div>)}
+                        </div>
+                    }
                     
-                    {info && <div className={styles.info}>{info}</div>}
+                    {/* {info && <div className={styles.info}>{info}</div>} */}
                 </div>
                 {
                     !reverse && 

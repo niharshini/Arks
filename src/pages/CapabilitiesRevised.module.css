@@ -34,6 +34,17 @@
     font-size: var(--font-size-5xl) !important;
 }
 
+.qualityAssuranceCardsContainer {
+    margin: 0 60px;
+}
+
+.qualityAssuranceCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+
 @media (max-width: 796px) {
     .holderContainer{
         padding-top: 50px;
