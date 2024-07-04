@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.9b543126.css",
-    "main.js": "./static/js/main.2a1f80e0.js",
+    "main.css": "./static/css/main.815876a1.css",
+    "main.js": "./static/js/main.ce999a21.js",
     "static/media/testimonials.png": "./static/media/testimonials.761a7d37eceac4a0fe8a.png",
     "static/media/tableWriting.png": "./static/media/tableWriting.69f0b09b20c737f14bc8.png",
     "static/media/aboutUsBanner.png": "./static/media/aboutUsBanner.c2ccc2acb0731c06aa75.png",
@@ -14,8 +14,6 @@
     "static/media/homeCap.png": "./static/media/homeCap.fdea39caa95111ea9d9d.png",
     "static/media/aboutUsVision.png": "./static/media/aboutUsVision.9e5aabc84e4974810db9.png",
     "static/media/aboutUsMission.png": "./static/media/aboutUsMission.0633dcb86083c3a9e240.png",
-    "static/media/placeholder_2.png": "./static/media/placeholder_2.6704f62c790993739559.png",
-    "static/media/placeholder_img1.png": "./static/media/placeholder_img1.deefda6afea05baecb95.png",
     "static/media/incis.png": "./static/media/incis.7420b14dc9413ed6df59.png",
     "static/media/product-placeholder.png": "./static/media/product-placeholder.14aca1e16d0f1fe8af4b.png",
     "static/media/profile2.png": "./static/media/profile2.4e3c7d5c89f250529c65.png",
@@ -25,14 +23,14 @@
     "static/media/profile3.png": "./static/media/profile3.5f5f78194d8a9a2af83d.png",
     "static/media/phone-contact.svg": "./static/media/phone-contact.a0fe0f14c397e5ca7581e2915ee830b2.svg",
     "static/media/email-contact.svg": "./static/media/email-contact.30b33c2616a3ed6f41b92daf3936d8b2.svg",
-    "index.html": "./index.html",
     "static/media/star-outline.svg": "./static/media/star-outline.3677be7e31556738ba320087236206c9.svg",
+    "index.html": "./index.html",
     "static/media/star.svg": "./static/media/star.a8d87470f2bed856922dc43e63586395.svg",
-    "main.9b543126.css.map": "./static/css/main.9b543126.css.map",
-    "main.2a1f80e0.js.map": "./static/js/main.2a1f80e0.js.map"
+    "main.815876a1.css.map": "./static/css/main.815876a1.css.map",
+    "main.ce999a21.js.map": "./static/js/main.ce999a21.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b543126.css",
-    "static/js/main.2a1f80e0.js"
+    "static/css/main.815876a1.css",
+    "static/js/main.ce999a21.js"
   ]
 }
