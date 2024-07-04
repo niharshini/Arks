@@ -1,55 +1,114 @@
+import ImageDescriptionHolder from "../root-components/image-description-holder";
 import styles from "./HelpFormContainer.module.css";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const HelpFormContainer = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-          console.log(result)
-      }, (error) => {
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   }
+
+  const defaultData = {
+    primary: {
+      question: `Enquire Us`,
+      content: "How can we help?",
+    },
+    secondary:
+      "Lorem ipsum dolor sit amet consectetur elit, sed Lorem ipsum sit amet consectetur adipiscing elit," +
+      " sed Lorem ipsum dolor sit amet consectetur",
+  };
+
+  const style = {
+    marginLeft: 0,
+  };
+
+  const secondaryFontStyles = {
+    color: "rgba(61, 60, 60, 0.78), #3D3C3C",
+    fontFamily: "Inter",
+    fontSize: "20px",
+    fontStyle: "normal",
+    fontWeight: 400,
+    lineHeight: "normal",
+  };
+
+  const triggerSubmit = (e) => {
+    e.preventDefault();
+
+    if (!e.target.name.value || !e.target.email.value || !e.target.message.value) {
+      notifyFailure();
+      return;
+    }
+    notifySuccess();
+  }
+
+  const notifySuccess = () => toast.success("Message Sent Successfully", {position: "bottom-left", autoClose: 2000});
+
+  const notifyFailure = () => toast.info("Please fill all the details", {position: "bottom-left", autoClose: 2000});
 
   return (
     <div className={styles.frameParent}>
-      <div className={styles.frameGroup}>
-        <div className={styles.rectangleParent}>
-          <div className={styles.frameChild} />
-          <div className={styles.enquireUsParent}>
-            <div className={styles.enquireUs}>Enquire Us</div>
-            <div className={styles.howCanWe}>How can we help?</div>
-          </div>
+      <div className={styles.fitContainer}>
+        <div className={`${styles.container}`}>
+          <ImageDescriptionHolder
+            description={defaultData}
+            style={style}
+            secondaryFontStyles={secondaryFontStyles}
+          />
         </div>
-        <div
-          className={styles.loremIpsumDolor}
-        >{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco `}</div>
+
+        <form className={styles.formParent} onSubmit={triggerSubmit}>
+          <div>
+            <label>
+              Name
+              <input
+                type="text"
+                name="name"
+                className={styles.inputBox}
+                placeholder="Enter your name"
+              />
+            </label>
+          </div>
+          <div className={styles.formElement}>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                className={styles.inputBox}
+                placeholder="Enter your email"
+              />
+            </label>
+          </div>
+          <div className={styles.formElement}>
+            <label>
+              Your Message
+              <input
+                type="text"
+                name="message"
+                className={styles.inputBox}
+                placeholder="Enter your message"
+              />
+            </label>
+          </div>
+
+          <div className={styles.submitButtonContainer}>
+            <input type="submit" value="Submit" className={styles.button}/>
+          </div>
+        </form>
       </div>
-      <div className={styles.inputParent}>
-        <div className={styles.input}>
-          <div className={styles.name}>Name</div>
-          <div className={styles.enterYourNameWrapper}>
-            <div className={styles.enterYourName}>Enter your name</div>
-          </div>
-        </div>
-        <div className={styles.input}>
-          <div className={styles.name}>Email</div>
-          <div className={styles.enterYourNameWrapper}>
-            <div className={styles.enterYourName}>Enter your email</div>
-          </div>
-        </div>
-        <div className={styles.input}>
-          <div className={styles.name}>Your Message</div>
-          <div className={styles.enterYourNameWrapper}>
-            <div className={styles.enterYourName}>Enter your message</div>
-          </div>
-        </div>
-        <div className={styles.button}>
-          <div className={styles.explore}><a href="mailto:email@example.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">Submit</a>
-        </div>
-        </div>
-      </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -20,9 +20,7 @@ const Clients = () => {
                 <div className={styles.descriptionComponent}>
                     <ImageDescriptionHolder description={{
                         "primary": {
-                            "question": `Our clients?`,
-                            "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed Lorem ipsum r sit amet consectetur.",
-                        }
+                            "question": `Trusted by`                        }
                     }} style={{marginLeft: 0}}/>
                 </div>
             </div>

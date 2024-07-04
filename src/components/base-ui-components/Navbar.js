@@ -7,9 +7,10 @@ const Navbar = () => {
     const [isMobileMenuShowing, setMobileMenuShowing] = useState(false)
     const [isSticky, setSticky] = useState(false)
     const menuClick = useRef(null)
+    const defaultPaths = ["/arks/", "/arks"]
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 150) {
+            if (window.scrollY > 0) {
                 setSticky(true);
             } else {
                 setSticky(false);
@@ -41,14 +42,13 @@ const Navbar = () => {
         window.addEventListener('resize', handleScreenWidth);
     }, []);
     const linkData = [
-        {to: '/home', title: 'Home'},
-        {to: '/capabilities', title: 'Capabilities'},
-        {to: '/products', title: 'Products'},
-        {to: '/services', title: 'Services'},
-        {to: '/about-us', title: 'About Us'},
-        {to: '/careers', title: 'Careers'},
-        {to: '/community', title: 'Community'},
-        {to: '/contact-us', title: 'Contact us'},
+        {to: '/home', title: 'Home', "default": true},
+        {to: '/capabilities', title: 'Capabilities', "default": false},
+        {to: '/products', title: 'Products', "default": false},
+        {to: '/company', title: 'Company', "default": false},
+        {to: '/careers', title: 'Careers', "default": false},
+        {to: '/community', title: 'Community', "default": false},
+        {to: '/contact-us', title: 'Contact us', "default": false},
     ];
 
     function getStyle(isActive) {
@@ -70,7 +70,7 @@ const Navbar = () => {
     }
 
     return (
-        <div ref={menuClick} className={`${styles.mainContainer} ${isSticky ? styles.sticky : ""}`}>
+        <div ref={menuClick} className={`${styles.mainContainer} ${isSticky?styles.sticky: ""}`}>
             <div className={styles.navContent}>
                 <div className={styles.logoContainer}>
                     <img className={styles.brandLogo} alt="" src={logo}/>
@@ -82,9 +82,10 @@ const Navbar = () => {
                             key={index}
                             to={link.to}
                             style={({isActive}) => {
+                                const currentPath = window.location.pathname;
                                 return {
-                                    ...getStyle(isActive),
-                                    textDecoration: isActive ? "" : "none",
+                                    ...getStyle(isActive || (defaultPaths.includes(currentPath.toLowerCase()) && link.default)),
+                                    textDecoration: isActive || (defaultPaths.includes(currentPath.toLowerCase()) && link.default) ? "" : "none",
                                 };
                             }}
                             onClick={() => setMobileMenuShowing(false)}

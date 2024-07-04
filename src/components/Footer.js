@@ -1,5 +1,15 @@
 import styles from "./FooterRework.module.css" ;
 
+import logo from "../assets/common/brandLogo.png"
+import mail from "../assets/common/gmail.png";
+import phone from "../assets/common/phone.png";
+
+import facebook from "../assets/common/facebook.png";
+import instagram from "../assets/common/instagram.png";
+import linkedin from "../assets/common/linkedin.png";
+import twitter from "../assets/common/twitter.png";
+import {NavLink} from "react-router-dom";
+
 const Footer = () => {
   return (
     <div className={styles.footer3}>
@@ -8,7 +18,7 @@ const Footer = () => {
         <div className={styles.content}>
             <div className={styles.logoDiv}>
                 <div className={styles.logo}>
-                    <img className={styles.image1Icon} alt="" src="./image-1@2x.png" />
+                    <img className={styles.image1Icon} alt="" src={logo} />
                 </div>
                 <div className={styles.address}>
                     <p className={styles.p}>Plot No:5, Padmanayani Nilayam,</p>
@@ -19,36 +29,35 @@ const Footer = () => {
             </div>
 
             <div className={styles.column1}>
-                <div className={styles.capabilities}>Capabilities</div>
-                <div className={styles.capabilities}>Careers</div>
-                <div className={styles.capabilities}>About Us</div>
-                <div className={styles.capabilities}>Enquiry</div>
+                <NavLink to={"/capabilities"} className={styles.capabilities}>Capabilities</NavLink>
+                <NavLink to={"/careers"} className={styles.capabilities}>Careers</NavLink>
+                <NavLink to={"/company"} className={styles.capabilities}>Company</NavLink>
+                <NavLink to={"/contact-us"} className={styles.capabilities}>Enquiry</NavLink>
             </div>
 
             <div className={styles.column2}>  
-                <div className={styles.capabilities}>Products</div>
-                <div className={styles.capabilities}>Services</div>
-                <div className={styles.capabilities}>Community</div>
+                <NavLink to={"/products"} className={styles.capabilities}>Products</NavLink>
+                <NavLink to={"/community"} className={styles.capabilities}>Community</NavLink>
             </div>
 
 
             <div className={styles.groupParent}>
           
                 <div className={styles.frameParent}>
-                    <div className={styles.followUsOn}>Get in touch with us today</div>
+                    <div className={styles.contact}>Get in touch with us today</div>
                         <div className={styles.gmailParent}>
                             <img
                                 className={styles.contactIcon}
                                 alt=""
-                                src="./gmail@2x.png"
+                                src={mail}
                             />
                             <span className={styles.emailAddr}>info@arksindia.com</span>
                         </div>
                         <div className={styles.phoneParent}>
-                            <img className={styles.contactIcon} alt="" src="./phone@2x.png" />
+                            <img className={styles.contactIcon} alt="" src={phone} />
                             <span className={styles.mobileNos}>
-                                <p>+91-891-6522044</p>
-                                <p>+91-998-5197555</p>
+                                <div>+91-891-6522044</div>
+                                <div>+91-998-5197555</div>
                             </span>
                         </div>
                         
@@ -60,22 +69,22 @@ const Footer = () => {
                     <img
                         className={styles.socialNetworkIcon}
                         alt=""
-                        src="./instagram@2x.png"
+                        src={instagram}
                     />
                     <img
                         className={styles.socialNetworkIcon}
                         alt=""
-                        src="./linkedin@2x.png"
+                        src={linkedin}
                     />
                     <img
                         className={styles.socialNetworkIcon}
                         alt=""
-                        src="./twitter@2x.png"
+                        src={twitter}
                     />
                     <img
                         className={styles.socialNetworkIcon}
                         alt=""
-                        src="./facebook@2x.png"
+                        src={facebook}
                     />
                     </div>
                 </div> 

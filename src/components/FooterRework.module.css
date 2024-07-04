@@ -1,5 +1,5 @@
 .footer3 {
-    margin-top: 100px;
+    /* margin-top: 1rem; */
     background-color: var(--color-gray-200);
     display: flex;
     justify-content: center;
@@ -49,12 +49,11 @@ hr {
 
 .mobileNos {
     position: relative;
-    bottom: 57px;
-    left: 55px;
+    left: 15px;
     font-size: var(--font-size-lg);
 }
 
-.phoneParent, .gmailParent {
+.gmailParent {
     margin-top: 1rem;
 }
 
@@ -63,5 +62,36 @@ hr {
 }
 
 .followUsOn {
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.followUsOnParent {
+    margin-top: 3.5rem;
+}
+.column1 > a{
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+}
+.column2 > a{
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+}
+
+@media screen and (max-width: 796px){
+    .content{
+        flex-direction: column;
+    }
+
+    .column1 {
+        margin-top: 2.5rem;
+    }
+
+    .groupParent {
+        margin-top: 2.5rem;
+    }
+    .followUsOn{
+        margin-bottom: 10px;
+    }
 }

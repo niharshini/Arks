@@ -1,5 +1,4 @@
 .aboutUsContainer{
-  padding-top: 80px;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -26,13 +25,14 @@
 
 @media (max-width: 796px) {
   .aboutUsContainer{
+    min-height: 80vh;
     flex-direction: column-reverse!important;
   }
   .containerImage{
     margin: 0!important;
-    width: 80%!important;
+    width: 100%!important;
   }
   .containerImageReverse{
-    width: 80%;
+    width: 100%;
   }
 }

@@ -1,0 +1,156 @@
+/* Original styles */
+
+.card-capabilities {
+  cursor: pointer;
+  height: 440px;
+  width: 450px;
+  display: flex;
+  margin-top: 20px; /* Added margin to the top */
+}
+
+.card-capabilities .overlap-group {
+  height: 440px;
+  position: relative;
+}
+
+.card-capabilities .group {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 440px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 450px;
+  border-radius: 10px;
+}
+
+.card-capabilities .rectangle {
+  background: linear-gradient(180deg, rgb(56, 55, 55) 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 10px;
+  height: 440px;
+}
+
+.card-capabilities .frame {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 16px;
+  position: absolute;
+  width: 400px;
+}
+
+.card-capabilities .div {
+  color: var(--white);
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.05px;
+  margin-top: -1px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.card-capabilities .p {
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: var(--white);
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.03px;
+  line-height: 32px;
+  position: relative;
+  width: 100%; /* Ensure the width is 100% to stay within the frame */
+  overflow: hidden; /* Hide any overflowing content */
+  white-space: normal; /* Allow text to wrap within the element */
+}
+
+.card-capabilities .button-instance {
+  flex: 0 0 auto !important;
+  gap: 13px !important;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+}
+
+.card-capabilities .instance-node {
+  color: var(--orange) !important;
+}
+
+.card-capabilities .property-1-1-default {
+  top: 312px;
+}
+
+.card-capabilities .property-1-1-variant-2 {
+  top: 150px;
+}
+
+
+/* Media queries for different breakpoints */
+
+@media screen and (max-width: 1399px) {
+  .card-capabilities {
+    height: 440px;
+    width: 350px;
+    margin: 20px; /* Center the card */
+    margin-top: 20px; /* Added margin to the top */
+  }
+
+  .card-capabilities .group {
+    width: 350px;
+  }
+
+  .card-capabilities .frame {
+    width: 300px;
+  }
+
+  .card-capabilities .div {
+    font-size: 27px;
+  }
+
+  .card-capabilities .p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card-capabilities .property-1-1-variant-2 {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 1193px) {
+  .card-capabilities {
+    height: 400px;
+    width: 300px;
+    margin: 0 auto; /* Center the card */
+    margin-top: 20px; /* Added margin to the top */
+  }
+
+  .card-capabilities .group {
+    width: 300px;
+  }
+
+  .card-capabilities .frame {
+    width: 250px;
+  }
+
+  .card-capabilities .div {
+    line-height: 28px;
+    font-size: 20px;
+  }
+
+  .card-capabilities .p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card-capabilities .property-1-1-variant-2 {
+    top: 188px;
+  }
+
+  .card-capabilities .button-instance {
+    bottom: 40px;
+    margin-left: 15px;
+  }
+}

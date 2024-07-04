@@ -1,4 +1,4 @@
-.groupChild {
+/* .groupChild {
   position: absolute;
   height: 0.51%;
   width: 100.08%;
@@ -312,4 +312,53 @@
   font-size: var(--group-2-h6-size);
   color: var(--white);
   font-family: var(--group-2-h6);
+} */
+
+
+
+.aboutUsRevised3 {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 100vh;
+}
+.aboutUsHero{
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: fit-content;
+}
+.image {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overviewContainer{
+  height: 50vh;
+}
+.holderContainer {
+  padding-top: 80px;
+  margin-left: 50px;
+  margin-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.holderContainer .descriptionPrimary{
+  font-size: var(--font-size-5xl) !important;
+}
+
+@media (max-width: 796px) {
+  .holderContainer{
+    padding-top: 50px;
+    margin: 50px 20px 20px;
+  }
+  .holderContainer .descriptionPrimary{
+    font-size: var(--font-size-lg) !important;
+  }
 }

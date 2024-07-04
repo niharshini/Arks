@@ -1,110 +1,39 @@
-.frameChild {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 720px;
-  height: 600px;
-  object-fit: cover;
-}
-.frameItem {
-  position: relative;
-  border-radius: var(--br-lgi);
-  background: linear-gradient(94.5deg, #f60, rgba(216, 128, 70, 0.6));
-  width: 10px;
-  height: 184px;
-}
-.technologies {
-  position: relative;
-  line-height: 32px;
+.aboutUsContainer{
+  padding-top: 80px;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
-  width: 552px;
-}
-.loremIpsumDolor,
-.technologies {
-  font-weight: 600;
-}
-.b,
-.elitSed {
-  font-family: var(--font-inter);
-}
-.elitSed {
-  font-weight: 600;
-}
-.loremIpsumDolorSitAmetCon {
-  margin: 0;
-}
-.loremIpsumR {
-  margin: 0;
-  font-weight: 600;
-}
-.loremIpsumDolorContainer1 {
-  line-break: anywhere;
-  width: 100%;
-}
-.loremIpsumDolorContainer {
-  position: relative;
-  font-size: var(--font-size-13xl);
-  line-height: 48px;
-  color: var(--black-shade);
-  display: flex;
-  align-items: center;
-  width: 550px;
-  font-family: var(--font-inter);
-}
-.technologiesParent {
-  width: 552px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-5xs);
-}
-.rectangleGroup {
-  display: flex;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-}
-.loremIpsumDolor1 {
-  position: relative;
-  font-size: var(--font-size-5xl);
-  line-height: 32px;
-  font-weight: 500;
-  font-family: var(--font-inter);
-  color: var(--black-shade);
-  display: inline-block;
-  width: 570px;
-}
-.frameParent {
-  position: absolute;
-  top: calc(50% - 164px);
-  left: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-29xl);
-}
-.ourVision,
-.rectangleParent {
-  position: absolute;
-  left: 0;
-}
-
-.rectangleParent {
-  top: calc(50% - 300px);
-  height: 600px;
-  width: 100%;
-}
-.ourVision {
-  top: 861px;
-  height: 720px;
-  overflow: hidden;
   text-align: left;
   font-size: var(--group-2-h6-size);
   color: var(--orange);
   font-family: var(--font-montserrat);
-  width: 100%;
+}
+
+.reversed{
+  flex-direction: row-reverse!important;
+}
+
+.containerImage{
+  margin-left: 30px;
+  width: 45%;
+}
+
+.containerImageReverse{
+  width: 45%;
+}
+
+@media (max-width: 796px) {
+  .aboutUsContainer{
+    min-height: 80vh;
+    flex-direction: column-reverse!important;
+  }
+  .containerImage{
+    margin: 0!important;
+    width: 100%!important;
+  }
+  .containerImageReverse{
+    width: 100%;
+  }
 }

@@ -1,0 +1,300 @@
+/* .groupChild {
+  position: absolute;
+  height: 0.51%;
+  width: 100.08%;
+  top: 79.31%;
+  right: -0.09%;
+  bottom: 20.18%;
+  left: 0.01%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.capabilities,
+.copyright2023 {
+  line-height: 33.4px;
+  font-weight: 500;
+}
+.copyright2023 {
+  position: absolute;
+  top: 96.43%;
+  left: 20.2%;
+}
+.capabilities {
+  position: relative;
+}
+.linkList,
+.linkList1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.linkList1 {
+  text-align: right;
+}
+.column,
+.followUsOn {
+  position: absolute;
+  top: 0;
+}
+.column {
+  height: 36.22%;
+  width: 29.49%;
+  right: 32.53%;
+  bottom: 63.78%;
+  left: 37.98%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-101xl);
+}
+.followUsOn {
+  left: 1.67%;
+  line-height: 33.4px;
+  font-weight: 500;
+}
+.frameChild {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.groupContainer {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 2.5px);
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.followUsOnParent {
+  position: absolute;
+  height: 29.88%;
+  width: 50.63%;
+  top: 70.12%;
+  right: 49.37%;
+  bottom: 0;
+  left: 0;
+}
+.gmailIcon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+.gmailParent {
+  position: absolute;
+  height: 26.12%;
+  width: 100%;
+  top: 26.87%;
+  right: 0;
+  bottom: 47.01%;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.phoneIcon {
+  position: absolute;
+  height: 72.92%;
+  width: 16.13%;
+  top: 6.25%;
+  right: 83.87%;
+  bottom: 20.83%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.p {
+  margin: 0;
+}
+.div {
+  position: absolute;
+  top: 0;
+  left: 25.35%;
+  line-height: 33.4px;
+  font-weight: 500;
+}
+.phoneParent {
+  position: absolute;
+  height: 35.82%;
+  width: 92.34%;
+  top: 64.18%;
+  right: 7.66%;
+  bottom: 0;
+  left: 0;
+}
+.getInTouch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 33.4px;
+  font-weight: 500;
+}
+.frameParent,
+.groupParent {
+  position: absolute;
+  height: 53.39%;
+  width: 99.16%;
+  top: 0;
+  right: 0;
+  bottom: 46.61%;
+  left: 0.84%;
+}
+.groupParent {
+  height: 64.03%;
+  width: 21.18%;
+  bottom: 35.97%;
+  left: 78.82%;
+}
+.image1Icon,
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image1Icon {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.logo {
+  height: 32.03%;
+  width: 39.2%;
+  right: 60.8%;
+  bottom: 67.97%;
+}
+.plotNo5PadmanayaniContainer {
+  position: absolute;
+  top: 50.65%;
+  left: 0;
+  line-height: 33.4px;
+  font-weight: 500;
+}
+.logoParent,
+.vectorParent {
+  position: absolute;
+  height: 58.93%;
+  width: 28.95%;
+  top: 0;
+  right: 71.05%;
+  bottom: 41.07%;
+  left: 0;
+}
+.vectorParent {
+  height: 78.4%;
+  width: 77.71%;
+  top: 10.8%;
+  right: 11.18%;
+  bottom: 10.8%;
+  left: 11.11%;
+}
+.footer3,
+.groupItem {
+  position: absolute;
+  left: 0;
+  width: 1440px;
+  overflow: hidden;
+}
+.footer3 {
+  bottom: 0;
+  background-color: var(--color-gray-200);
+  height: 500px;
+}
+.groupItem {
+  top: 0;
+  background-color: var(--color-darkslategray);
+  height: 120px;
+  opacity: 0.4;
+}
+.logo1,
+.rectangleDiv {
+  position: absolute;
+  height: 100%;
+  width: 11.06%;
+  top: 0;
+  right: 88.94%;
+  bottom: 0;
+  left: 0;
+}
+.rectangleDiv {
+  height: 12.5%;
+  width: 2.31%;
+  top: 87.5%;
+  right: 96.32%;
+  left: 1.37%;
+  border-radius: var(--br-10xs);
+  background-color: var(--orange);
+}
+.home {
+  color: var(--orange);
+}
+.contactUs,
+.home {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+.homeParent {
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 25%;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+}
+.rectangleParent {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  width: 910px;
+  height: 32px;
+}
+.frameGroup,
+.logoGroup {
+  position: absolute;
+  top: 23.5px;
+  left: 160px;
+  width: 1120px;
+  height: 72px;
+}
+.frameGroup {
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 120px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inter);
+}
+.enquiryRevised3 {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 2271px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--group-2-h6-size);
+  color: var(--white);
+  font-family: var(--group-2-h6);
+} */
